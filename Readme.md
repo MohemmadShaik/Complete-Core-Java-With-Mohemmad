@@ -13,8 +13,10 @@ Install java + Code Editor
 Note : Here we were using VS-Code editor 
 Notebook + Pen
 
-Author : Mohemmad
-Reference : Apna College 
-gmail : mohemmadshaik@gmail.com
-Username : MohemmadShaik
+
+Reference : Apna College ,
+gmail : mohemmadshaik@gmail.com ,
+Username : MohemmadShaik ,
+
+Author : Mohemmad 
 
