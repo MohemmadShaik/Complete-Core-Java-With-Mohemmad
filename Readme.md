@@ -36,6 +36,12 @@ Core Java Content
 6.16 How does Java code run
 6.17 Variable Questions FAQ's 
 
+Notebook + Pen
+
+
+Reference : Apna College ,
+gmail : mohemmadshaik@gmail.com ,
+Username : MohemmadShaik ,
 
 Author : Mohemmad
 Reference : Apna College (enrolled gmail : azharuddinmohemmad@gmail.com)
