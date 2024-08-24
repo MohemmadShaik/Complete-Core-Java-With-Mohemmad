@@ -21,28 +21,97 @@
 
 /*  6.1 Creating a Simple Java File program by saying Hello to the whole World through java Program 
 
-
-
-*/
 public class JavaBasics {
 
     public static void main(String[] args) {
-      
-    // System.out.println("Hello/nWorld\nHellooo \n World");
 
-     /* Permeter of Rectangle :
+    System.out.println("Hello World");
+    }
+}
+
+*/
+
+/*  6.2 Boilerplate Code 
+
+public class JavaBasics {
+
+    public static void main(String[] args) {
+          
+           // Here we write our coding stuff...
+    }
+}
+
+*/
+
+// 6.5 Variables in Java 
+
+/* Variables are like containers which can store values w.r.t their types .
+
+-- The values stored in a variables get varied by the User as per the requirement.
+-- The values which are constant are called literals.
+
+Note :
+        Numeric literals : 1 2 3 4 5 6 7 8 9 0 
+        Charecter literals : 'a' 'b' 'c' 'd' ....... '@' '#' '*' '$' and all other special symbols...
+All the numeric and charecter literals values are universal (which means at any cost these values won't be changed)
+
+Eg : If we want to find the perimeter of a Rectangle ,
+We know the formula  : 
+               2 * ( a + b)  
+
+Here : 2 is constant value which never going to change so it's a literal 
+where a and b values gets varied as per user requirement.
+           So we call a and b as variables. 
+ 
+public class JavaBasics {
+
+    public static void main(String[] args) {
+          
+           int a = 100;
+           int b = 25;
+           String name = "Virat";
+
+           System.out.println(a); // output 100
+           System.out.println(b); // output 25
+           System.out.println(name); // output Virat
+
+           a = b;
+           System.out.println(a); // output 25
+           a = 50;
+           System.out.println(a); // output 50
+           
+    }
+}
+
+*/
+
+//6.6 Datatypes in Java
+
+/* Primitive Data types and their sizes :
+   ====================================
+     byte : 1 byte
+     boolean : 1 byte
+     char : 2 bytes
+     short: 2 bytes
+     int : 4 bytes
+     float : 4 bytes
+     long : 8 bytes
+     double : 8 bytes 
      
-         int a=10;
-         int b=5;
-    //   int p= 2 * (a+b);
-    //   System.out.println("Perimiter of Rectangle " +a+ " and "+b+"  is : "+p);
-    */
+     
+     Non-Primitive Data types :
+     ========================
+     
+     String
+     Array
+     Class
+     Object
+     Interface
+     */
 
-    // Sum of two numbers 
-    int a1=10;
-    int b1=5;
-    int sum = a1 + b1;
-    System.out.println(sum);
+ /* public class JavaBasics {
+
+    public static void main(String[] args) {
 
     // Primitives Data Types
 
@@ -56,19 +125,19 @@ public class JavaBasics {
     System.out.println(price);
     int number = 25;
     System.out.println("int number :  "+number);
-    /* Primitive Data types and their sizes
-     byte : 1 byte
-     boolean : 1 byte
-     char : 2 bytes
-     short: 2 bytes
-     int : 4 bytes
-     float : 4 bytes
-     long : 8 bytes
-     double : 8 bytes */
 
+    // 6.7 Sum of a and b 
 
+    int a = 10;
+    int b = 20;
+    int sum = a + b;
+    System.out.println("Addition of "+a+"  +  "+b+" is : "+sum);
+    }
+}
+   
+*/
 
-/*  6.9 Input in Java
+/* 6.9 Input in Java
 
 next
 nextLine
@@ -78,15 +147,5 @@ nextInt
 nextShort
 nextLong
 nextFloat
-nextDouble */
-
-
-     
-     
-
-
-     
-    
-    
-    }
-}
+nextDouble
+*/
