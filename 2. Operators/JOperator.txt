@@ -1,0 +1,36 @@
+ 7. Operators
+
+Symbols that tell compiler to perform some operation.
+
+Eg : int sum = a + b; // Here a and b  ---> operands and '+' ---> operator
+   7.1 Types of Operators
+   7.2 Arithmetic Operators
+   7.3 Unary Operators
+   7.4 Relational Operators
+   7.5 Logical Operators
+   7.6 Assignment Operators
+   7.7 Operator Precedence_V1.1
+   7.8 Operators Questions FAQ's
+ 
+
+ 7.1 Types of Operators
+ =======================
+
+ Arithmetic Operators (Binary/Unary)
+ Relational Operators 
+ Logical Operators
+ Bitwise Operators (Bit Manipulation)
+ Assignment Operators
+
+
+ Arithmetic Operators
+ ====================
+
+     Binary                                       Unary 
+     (Here we use 2 operands)              (Here we use only one operand)
+      Let's say A= 10 and B=5            
+       +  --> A + B = 10 + 5 =15                      ++
+       -  --> A - B = 10 - 5 =5                       --
+       *  --> A * B = 10 * 5 =50
+       /  --> A / B = 10 / 5 =2
+       %(modulo) --> A % B = 10 % 5 =0
