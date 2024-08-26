@@ -48,3 +48,99 @@ Pre Increment (before)           Post Increment (after)
  ++a                                 a++
  1. first value changes             1. first value is used
  2. later value gets used           2. later value is changed
+
+ 7.4 Relational operators ( == , != , > , < , >= , <=)
+ ========================
+It gives true or false based on the comparison between two operands
+ 
+ == --> To check weather two operand values are equal or not
+ 
+ Eg : lets say a = 5 and b =10 then a==b is false
+      lets say a =20 and b =20 then a==b is true
+
+!= --> not equal to ( inquality)
+
+> --> To check which operand is greater 
+
+< --> To check which operand is lesser
+
+>= --> To check which operand is greater and equal to 
+
+<= --> To check which operand is lesser and equal to 
+
+7.5 Logical Operators
+======================
+
+&& (Logical AND)
+
+|| (Logical ||)
+
+! (LOgical NOT)  also called as NOT operator
+
+Statement 1 : 3 > 2 //true
+Statement 2 : 1! = 1 // false
+Statement 3 : 5 < 10 //true
+
+Logical  AND (&&)
+==================
+
+ANSWER | Statement-1 | Statement-2
+=================================
+  T    |     T       |        T
+  F    |     T       |        F
+  F    |     F       |        T
+  F    |     F       |        F
+
+
+Logical  OR (||)
+==================
+
+ANSWER | Statement-1 | Statement-2
+=================================
+  T    |     T       |        T
+  T    |     T       |        F
+  T    |     F       |        T
+  F    |     F       |        F
+
+  Logical NOT (!) :
+  ================
+
+  If we have a true Statement then we can make it false
+  If we have a flase Statement then we can make it true
+
+  Mostly we use it in a single Statement.
+
+  true ---> false
+  false ---> true
+
+
+  ANSWER | Statement-1 |
+========================
+  F      |     T       | 
+  T      |     F       |                 
+
+
+7.6 : Assignment Operator ( =, += , -=  , *= , /=)
+===================================================
+ 
+    int A = 10;
+    A += 10; /* A = A + 10; */
+    System.out.println(A);//20
+
+    int B = 8;
+    B = B - 8; /* B-=8; */
+    System.out.println(B);//0
+
+    int C = 30;
+    C *= 30; /* C = C * 30;  */
+    System.out.println(C);//900
+
+    int D = 40;
+    D /= 40; /* D = D / 40 */
+    System.out.println(D);//1
+
+    int E = 40;
+    E %= 40; /* E = E % 40 */
+    System.out.println(E); //0
+
+
