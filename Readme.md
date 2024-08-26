@@ -36,14 +36,31 @@ Core Java Content
 6.16 How does Java code run
 6.17 Variable Questions FAQ's 
 
-Notebook + Pen
+7. Operators
+*************
+7.1 Types of Operators
+7.2 Arithmetic Operators
+7.3 Unary Operators
+7.4 Relational Operators
+7.5 Logical Operators
+7.6 Assignment Operators
+7.7 Operator Precedence_V1.1
+7.8 Operators Questions FAQ's
 
-
-Reference : Apna College ,
-gmail : mohemmadshaik@gmail.com ,
-Username : MohemmadShaik ,
+8 Conditional Statements
+************************
+8.1 if else
+8.2 Print the largest of 2 numbers
+8.3 Print if number is Odd or Even
+8.4 else if
+8.5 Income Tax Calculator
+8.6 Print the largest of 3 numbers
+8.7 Ternary Operator
+8.8 Check if a student will Pass or Fail
+8.9 Switch statement
+8.10 Calculator
+8.11 Conditional Questions FAQ's
 
 Author : Mohemmad
-Reference : Apna College (enrolled gmail : azharuddinmohemmad@gmail.com)
 gmail : mohemmadshaik@gmail.com
 Username : MohemmadShaik
