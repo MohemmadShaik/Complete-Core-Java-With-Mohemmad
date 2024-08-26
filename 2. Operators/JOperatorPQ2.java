@@ -1,4 +1,4 @@
-// Q2 : Guess the output for the below program
+// 7.8-Q2 : Guess the output for the below program
 
 public class JOperatorPQ2 {
     public static void main(String[] args) {
