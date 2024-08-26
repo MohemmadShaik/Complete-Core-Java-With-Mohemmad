@@ -8,7 +8,7 @@
         System.out.print(exp1 + " , ");
         System.out.print(exp2);
     
-
+       /* output is (5 , 4) */
         
     }
 }
