@@ -29,8 +29,21 @@ Eg : int sum = a + b; // Here a and b  ---> operands and '+' ---> operator
      Binary                                       Unary 
      (Here we use 2 operands)              (Here we use only one operand)
       Let's say A= 10 and B=5            
-       +  --> A + B = 10 + 5 =15                      ++
+       +  --> A + B = 10 + 5 =15                      ++  
        -  --> A - B = 10 - 5 =5                       --
        *  --> A * B = 10 * 5 =50
        /  --> A / B = 10 / 5 =2
        %(modulo) --> A % B = 10 % 5 =0
+
+
+Unary Operators
+===============
+To increase or decrease the operand value by 1 we use unary operators 
+Eg:  a++ or ++a or a = a+1 // Here a value is 1 
+
+Here a is a operand and the value of a will increase by 1 
+
+Pre Increment (before)           Post Increment (after)
+ ++a                                 a++
+ 1. first value changes             1. first value is used
+ 2. later value gets used           2. later value is changed
