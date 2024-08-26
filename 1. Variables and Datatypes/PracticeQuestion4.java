@@ -6,7 +6,7 @@
  * int i = 1000;
  * float f = 3.14f;
  * double d = 99.9954;
- * result = (f * b) + (i % c) - (d * s);   // Here result is a double datatype we confirmed from below program.
+ * result = (f * b) + (i % c) - (d * s);   // The result variable will be double type because of type conversion.
  * 
   */
 public class PracticeQuestion4 {
