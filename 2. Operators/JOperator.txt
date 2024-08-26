@@ -1,4 +1,5 @@
  7. Operators
+ =============
 
 Symbols that tell compiler to perform some operation.
 
@@ -23,7 +24,7 @@ Eg : int sum = a + b; // Here a and b  ---> operands and '+' ---> operator
  Assignment Operators
 
 
- Arithmetic Operators
+ 7.2 Arithmetic Operators
  ====================
 
      Binary                                       Unary 
@@ -36,7 +37,7 @@ Eg : int sum = a + b; // Here a and b  ---> operands and '+' ---> operator
        %(modulo) --> A % B = 10 % 5 =0
 
 
-Unary Operators
+7.3 Unary Operators
 ===============
 To increase or decrease the operand value by 1 we use unary operators 
 Eg:  a++ or ++a or a = a+1 // Here a value is 1 
