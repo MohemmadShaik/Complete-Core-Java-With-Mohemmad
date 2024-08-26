@@ -9,7 +9,7 @@ public class JOperatorPQ3 {
         z /= (x + y); /* z = z / (x + y) // z = 0*/
         System.out.println(x + " " + y + " " + z);
 
-        /* output : 4  0  0 */
+        /* correct output : 4  0  0 */
     }
     
 }

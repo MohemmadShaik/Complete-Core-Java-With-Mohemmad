@@ -8,8 +8,7 @@ public class JOperatorPQ4 {
 
         System.out.println(exp);
 
-        /* Correct Output : 278 
-           my output :  292 need to cross check  */
+        /* Correct Output : 278  */
     }
     
 }

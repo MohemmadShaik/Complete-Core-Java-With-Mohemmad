@@ -13,8 +13,10 @@ public class JOperatorPQ2 {
 
         if((y+200) < x && (y+150) < z){
             System.out.println("Hello Java ");
+
+
+            /* Correct Output : Java */
         }
     }
 }
 
-/* Output : Java */
