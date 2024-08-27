@@ -1,0 +1,109 @@
+8.Conditional Statements
+=======================
+8.1 if else
+8.2 Print the largest of 2 numbers
+8.3 Print if number is Odd or Even
+8.4 else if
+8.5 Income Tax Calculator
+8.6 Print the largest of 3 numbers
+8.7 Ternary Operator
+8.8 Check if a student will Pass or Fail
+8.9 Switch statement
+8.10 Calculator
+8.11 Conditional Questions FAQ's
+-------------------------------------------------------------------
+
+8.1 if-else Statements
+======================
+
+ * if-else statements are used to control the flow of a program based on conditions.
+   They allow the program to execute certain code blocks when specific conditions are met, 
+   and other code blocks when those conditions are not met.
+
+ * if-else statements are fundamental in controlling the logical flow of a Java program based on different conditions.
+
+Syntax :
+=======
+
+if (condition) {
+    // Code to execute if the condition is true
+} else {
+    // Code to execute if the condition is false
+}
+
+Program 1 : Simple if-else statement 
+===========
+ 
+ // To print a number is +ve or -ve.
+
+public class CondStmt1 {
+    public static void main(String[] args) {
+        int number = 10;
+
+        if (number > 0) {
+            System.out.println("The number is positive.");
+        } else {
+            System.out.println("The number is not positive.");
+        }
+    }
+}
+
+Program2 : else-if Statements
+==========
+
+We can have multiple conditions using else if.
+
+if (condition 1){
+  
+  //Condition 1 is true then 
+
+}
+else if ( condition 2){
+
+
+}
+else{
+
+}
+public class CondStmt2 {
+    public static void main(String[] args) {
+        int number = 0;
+
+        if (number > 0) {
+            System.out.println("The number is positive.");
+        } else if (number < 0) {
+            System.out.println("The number is negative.");
+        } else {
+            System.out.println("The number is zero.");
+        }
+    }
+}
+
+Program3 : Nested if-else Statement 
+==========
+if-else statements can be nested, which means we can place an if-else statement inside another if-else statement.
+
+public class CondStmt3 {
+    public static void main(String[] args) {
+        int age = 25;
+
+        if (age > 18) {
+            if (age > 60) {
+                System.out.println("You are a senior citizen.");
+            } else {
+                System.out.println("You are an adult.");
+            }
+        } else {
+            System.out.println("You are a minor.");
+        }
+    }
+}
+
+Inshort :
+=========
+if       : Executes code if the condition is true.
+else     : Executes code if the if condition is false.
+else if  : Checks another condition if the previous if condition is false.
+Nested if-else : Allows more complex decision-making by placing if-else statements inside other if-else statements.
+
+
