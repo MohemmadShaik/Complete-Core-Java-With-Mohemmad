@@ -114,9 +114,8 @@ public class CondStmt {
 
 */
 
-
-
-// Program5.2 : Applying different logic for the same program 5.1 .                            
+/* 
+//Program5.2 : Applying different logic for the same program 5.1 .                            
 
 import java.util.Scanner;
 
@@ -142,5 +141,59 @@ public class CondStmt {
         sc.close(); //Close the scanner to avoid resource leaks
     }
 }
- 
+
+*/  
+
+//8.5 Program to calculate the income tax based on the below conditions :
+/* income < 5L ==> 0% Tax , income between 5L to 10L ==> 20% Tax , income > 10L ==> 30% Tax */
+
+import java.util.Scanner;
+
+public class CondStmt{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter your income here : ");
+        int income = sc.nextInt();
+        int tax;
+
+        if(income < 500000){
+            tax = 0;
+        }else if(income >= 500000 && income < 1000000){
+            tax = (int) (income * 0.2);
+        }else{
+            tax = (int) (income * 0.3);
+        }
+          System.out.println("Your Income : "+income+" and tax you need to pay : "+tax);
+        sc.close();//Close the scanner to avoid resource leaks
+    }
+}
+
+/* 
+// 8.5 Program : Applying different logic for the same program 
+import java.util.Scanner;
+
+public class CondStmt {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter your Salary here : ");
+        double sal = sc.nextDouble();
+
+        if(sal > 500000){
+            if (sal <= 1000000){
+                System.out.println("The income tax on a salary of RS."+sal+" with 20% tax is : "+(sal * 0.2)+" RS");
+            }else{
+                System.out.println("The income tax on a salary of RS."+sal+" with 30% tax is : "+(sal * 0.3)+" RS");
+            }
+        }
+        else
+        {
+         System.out.println( "The income tax on a salary of RS."+sal+" with 0% tax : "+sal+" RS");   
+        }
+
+        sc.close(); // Close the scanner to avoid resource leaks
+    }
+}
+ */
 
