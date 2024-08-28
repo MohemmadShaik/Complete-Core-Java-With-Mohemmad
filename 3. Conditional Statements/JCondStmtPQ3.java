@@ -26,5 +26,6 @@ import java.util.Scanner;
             default: System.out.println("Sorry , Only 1 to 7 numbers are allowed");
                     break;
          }
+         sc.close(); //close the scanner to avoid resource leaks.
     }
 }

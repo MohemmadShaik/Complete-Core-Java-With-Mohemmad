@@ -379,6 +379,121 @@ import java.util.Scanner;
     }
  }
 
+8.11 Conditional Statements Practice Questions
+
+/* Q1 : Write a java program to get a number from the user and print whether it is positive or negative */
+
+import java.util.Scanner;
+public class JCondStmtPQ1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("To check given number is +ve or -ve ");
+        System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+        System.out.print("Enter Number here : ");
+        int number = sc.nextInt();
+
+        if(number>=0){
+            System.out.println(number+" is Positive Number");
+        }else{
+            System.out.println(number+" is a Negative Number");
+        }
+        sc.close();
+    }  
+}
+
+/* Q2 : Finish the following code so that it prints You have a fever if your temperature is above 100 
+   and otherwise prints You don't have a fever.
+ */
+import java.util.Scanner;
+public class JCondStmtPQ2 {
+    public static void main(String[] args) {
+    
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Your temperature : ");
+        double temp = sc.nextDouble();
+        if(temp>100){
+            System.out.println("You have fever with temperature :"+temp);
+        }else{
+            System.out.println("No fever");
+        }
+        sc.close();
+    }
+}
+
+/* Q3 : Write a program to input week number(1-7) and
+        print day of week name using switch case. */
+
+import java.util.Scanner;
+
+ public class JCondStmtPQ3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Number between 1 to 7 : ");
+         int week =sc.nextInt();
+         switch (week) {
+            case 1: System.out.println("SUNDAY");
+                    break;
+            case 2: System.out.println("MONDAY");
+                    break;
+            case 3: System.out.println("TUESDAY");
+                    break;
+            case 4: System.out.println("WEDNESDAY");
+                    break;
+            case 5: System.out.println("THURSDAY");
+                    break;
+            case 6: System.out.println("FRIDAY");
+                    break;
+            case 7: System.out.println("SATURDAY");
+                    break;
+            default: System.out.println("Sorry , Only 1 to 7 numbers are allowed");
+                    break;
+         }
+         sc.close();// close the scanner to avoid resource leaks
+    }
+}
+
+/* Q4 : what will be the value of x & y in the following program */
+
+public class JCondStmtPQ4 {
+    public static void main(String[] args) {
+
+        int a = 63, b = 36;
+        boolean x = (a < b ) ? true : false; // output : x = false
+        int y = (a > b) ? a : b; // output : y = 63
+        System.out.print("x :"+x+" and  y : "+y);
+    }
+}
+
+/* Q5 : Write a program that takes a year from the user and print whether that year is a leap year or not. 
+ 
+Note : Three conditions must satisfy to tell that a year is a leap year or not.
+
+  a. year must divisible by 4
+  b. year should not be divisible by 100
+  c. If a year divisible by 100 then it should be divisible by 400 as well 
+ 
+*/
+import java.util.Scanner;
+public class JCondStmtPQ5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the year :");
+        int year=sc.nextInt();
+
+        boolean x = (year % 4) == 0;
+        boolean y = (year % 100) != 0;
+        boolean z = ((year % 100 == 0) && (year % 400 == 0));
+
+        if(x && (y || z)){
+            System.out.println(year+" is a leap year.");
+        }else{
+            System.out.println(year+" is not a leap year.");
+        }
+        sc.close();//close the scanner to avoid resource leaks.
+    }
+    
+}
+
 
 
 
