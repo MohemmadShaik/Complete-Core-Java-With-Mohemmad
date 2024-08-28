@@ -1,0 +1,237 @@
+9.Loops (Flow Controls)
+----------------------
+- A loop in Java is a control structure that allows you to execute
+  a block of code repeatedly based on a condition. 
+
+- Loops are useful when you need to perform repetitive tasks,
+  such as iterating through elements of an array, 
+  performing calculations multiple times, or 
+  processing user input until a certain condition is met.
+
+Types of Loops in Java:
+======================
+while Loop
+for Loop
+do-while Loop
+Enhanced for Loop (used with arrays or collections)
+
+9.1. while Loop : when you do not know in advance how many times you 
+     ==========   want to execute a statement or block of statements.
+                  The loop continues as long as the condition is true.
+   
+   inshort : Best when the number of iterations is unknown but
+   =======   the condition is known.
+   
+   syntax :
+   ======
+
+   while (condition) {
+     
+     // do something
+   
+    }
+
+Program 1 : To print numbers from 1 to 5.
+==========
+
+public class Main {
+    public static void main(String[] args) {
+        int i = 1;
+        while (i <= 5) {
+            System.out.println("Iteration: " + i);
+            i++;
+        }
+    }
+}
+
+output :
+======
+
+Iteration: 1
+Iteration: 2
+Iteration: 3
+Iteration: 4
+Iteration: 5
+
+//9.2program 1 : To print Hello World 100 times
+
+/* public class JLoops {
+    public static void main(String[] args) {
+        int counter = 0;
+        while (counter<100) {
+            System.out.println(counter+" : Hello World");
+            counter++;
+            
+        }
+        System.out.println("Hello World Printed 100 times completed.");
+    }
+} 
+*/
+
+//9.3Program 2 : To print numbers 1 to 10 using while loop
+
+/* public class JLoops {
+
+    public static void main(String[] args) {
+        int count = 1;
+        while(count <= 10){
+            System.out.print(count+" ");
+            count++;
+        }
+        System.out.println("\n Printed 1 to 10 numbers completed. ");
+    }
+} */
+
+// 9.4 Program 3 : To print numbers 1 to n, where n is the number given by the user end.\
+
+/*
+import java.util.Scanner;
+ public class JLoops{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int count= 1;
+        System.out.print( " Enter n value : ");
+        int n = sc.nextInt();
+
+       while(count<=n){
+        System.out.print(count+" ");
+        count++;
+       }
+       System.out.println(" Numbers printed from 1 to n :"+n+" completed.");
+       sc.close(); // close the scanner to avoid resource leaks
+    }
+}
+
+*/
+
+/* 
+  //9.5 Program 4 : To print sum of first n natural numbers
+  // Eg : let's say n = 5 then 1 + 2 + 3+ 4 + 5 = 15
+ 
+ import java.util.Scanner;
+ public class JLoops {
+ 
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter n value : ");
+        int n = sc.nextInt();
+        int i = 1;
+        int sum = 0;
+        
+        while(i <= n){
+             
+             sum = sum + i;
+             i++;   
+        }
+        System.out.println("Sum of first n :"+n+" Natural Numbers : "+sum);
+        sc.close();// close the scanner to avoid resource leaks
+    }
+ }
+
+ */
+
+=====================>> While Loop END <<=====================
+
+9.6 for Loop: when you know in advance how many times you want to
+    ========  execute a statement or a block of statements.
+
+   inshort : Best when the number of iterations is known.
+
+syntax : 
+
+   for (initialization; condition; update) {
+    // Code to be executed
+}
+
+Program 1 :
+==========
+
+public class Main {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Iteration: " + i);
+        }
+    }
+}
+
+output :
+======
+
+Iteration: 1
+Iteration: 2
+Iteration: 3
+Iteration: 4
+Iteration: 5
+
+
+3. do-while Loop : It is similar to the while loop, but the condition
+   ============    is checked after the loop's body is executed,
+                   ensuring that the loop runs at least once.
+
+  Inshort : Similar to while but ensures the loop executes
+            at least once.
+  
+  syntax :
+  =======
+  do {
+    // Code to be executed
+ } while (condition);
+                 
+Program 1 :
+===========
+
+public class Main {
+    public static void main(String[] args) {
+        int i = 1;
+        do {
+            System.out.println("Iteration: " + i);
+            i++;
+        } while (i <= 5);
+    }
+}
+
+output :
+======
+Iteration: 1
+Iteration: 2
+Iteration: 3
+Iteration: 4
+Iteration: 5
+
+4. Enhanced for Loop (for-each loop):
+   =================================
+   The enhanced for loop is used to iterate through elements in an array or a collection.
+   
+   Inshort : Best for iterating over arrays or collections in a simplified manner.
+
+
+   syntax:
+   ======
+   for (dataType item : array) {
+    // Code to be executed
+   }
+
+   Program 1:
+   =========
+   public class Main {
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 4, 5};
+        
+        for (int num : numbers) {
+            System.out.println("Number: " + num);
+        }
+    }
+}
+
+output :
+======
+
+Number: 1
+Number: 2
+Number: 3
+Number: 4
+Number: 5
+
+
+
+
