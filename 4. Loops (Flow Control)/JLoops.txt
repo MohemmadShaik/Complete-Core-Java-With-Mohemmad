@@ -418,6 +418,51 @@ public class JLoops {
      }
 }
 
+// 9.15 Check if a number is Prime or not
+
+A prime number has exactly two distinct positive divisors (1 and itself).
+Eg : 5 is prime because it can only be divided by 1 and 5.
+list of prime numbers : 2,3,5,7,11...
+
+ 
+A composite number has more than two distinct positive divisors.
+Eg : 6 is composite because it can be divided by 1, 2, 3, and 6.
+list of composite numbers : 4, 6, 8, 9, 10, 12...
+
+**NOTE : Except for the number 1, Any natural number greater than 1
+         that is not a prime number is definitely a composite number. 
+import java.util.Scanner;
+
+public class JLoops {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("enter number ");
+        int n = sc.nextInt();
+        // Handle the edge cases for n <= 1
+        if (n <= 1) {
+            System.out.println(n + " is not a Prime Number.");
+        } else {
+            boolean isPrime = true;
+             // Only check up to the square root of n
+            for (int i = 2; i <=Math.sqrt(n); i++) { //**NOTE : for (int i=2; i<=n-1; i++) it also works fine but it's not that optimized compared to math.sqrt(n) because here loop checks for n-2 times for any given number.
+                if (n % i == 0) { // n is a multiple of i ( i is not equal to 1 or n)
+                    isPrime = false;
+                    break;  // No need to check further, not a prime number
+                }
+            }
+            if (isPrime == true) {
+                System.out.println(n + " is a Prime Number.");
+            } else {
+                System.out.println(n + " is not a Prime Number. ");
+            }
+        }
+        sc.close(); // close the scanner to avoid resource leaks
+    }
+}
+
+
+
 
 
 

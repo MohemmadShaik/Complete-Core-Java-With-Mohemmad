@@ -77,24 +77,23 @@ import java.util.Scanner;
 
  */
 
- /*  
- //9.6 for Loop
+/*  
+//9.6 for Loop
 
- //Program 1:  to print 10 times Hello World using for loop.
+//Program 1:  to print 10 times Hello World using for loop.
 
- public class JLoops{
+public class JLoops{
 
-    public static void main(String[] args) {
-        for(int i=1; i<=10 ; i++){
-            System.out.println(i+". Hello World");
-        }
-        System.out.println("Hello World Printed 10x");
-    }
- }
+   public static void main(String[] args) {
+       for(int i=1; i<=10 ; i++){
+           System.out.println(i+". Hello World");
+       }
+       System.out.println("Hello World Printed 10x");
+   }
+}
 */
 
-
- //9.7 Print SQUARE Pattern
+//9.7 Print SQUARE Pattern
 /* 
  public class JLoops{
     public static void main(String[] args) {
@@ -106,33 +105,32 @@ import java.util.Scanner;
 
  */
 
- /* 
- // 9.8 Print Reverse of a number
-  // $$NOTE1 : To get the last digit of any number use : num%10
-  // $$NOTE2 : To remove the last digit of any number use : num/10
+/* 
+// 9.8 Print Reverse of a number
+ // $$NOTE1 : To get the last digit of any number use : num%10
+ // $$NOTE2 : To remove the last digit of any number use : num/10
 
- import java.util.Scanner;;
-  public class JLoops{
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a number a reverse : ");
-        int num=sc.nextInt();
-        int given_number = num;
-        int reverse = 0;
-        int last_digit = 0;
-        while(num>0){
-            last_digit = num%10;
-            reverse = (reverse * 10) + last_digit;
-            num = num/10;                                                                                                                                                                                                   
-        }
-        System.out.println("given Number : "+given_number+ "\n"+" Reverse Number : "+reverse);
-       sc.close();//close the scanner to avoid resource leaks
-    }
-  }
+import java.util.Scanner;;
+ public class JLoops{
+   public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       System.out.print("Enter a number a reverse : ");
+       int num=sc.nextInt();
+       int given_number = num;
+       int reverse = 0;
+       int last_digit = 0;
+       while(num>0){
+           last_digit = num%10;
+           reverse = (reverse * 10) + last_digit;
+           num = num/10;                                                                                                                                                                                                   
+       }
+       System.out.println("given Number : "+given_number+ "\n"+" Reverse Number : "+reverse);
+      sc.close();//close the scanner to avoid resource leaks
+   }
+ }
 
-  */
+ */
 
-  
 //9.11 Break Statement : To exit from loop we use break statement
 /* 
 // Program 9.11.1 : If i value is 3 then exit from the loop 
@@ -151,7 +149,7 @@ public class JLoops{
 */
 
 //9.12 Question - break keyword
- 
+
 // Program 9.12.1  : Keep entering numbers utill user enters a multiple of 10
 //LOGIC 1 :
 /* 
@@ -171,7 +169,6 @@ public class JLoops{
     }
 }
     */
-
 
 /* 
 //LOGIC 2 :
@@ -193,8 +190,40 @@ import java.util.Scanner;
         System.out.println("exit loop since "+num+" is multiply by 10.");
     }
  }
+*/
+
+/* 
+
+ //Program 9.12.2 : print 1 to 10 numbers but from  number 7 I want numbers from 50 to 55 and then from 56 I want number continued from 7 to 10.
+
+  //output : 1 2  3 4 5 6 50 51 52 53 54 55 7 8 9 10
+
+ public class JLoops{
+    public static void main(String[] args) {
+        
+        for( int i = 1; i<=10 ; i++ ){
+            if(i==7){
+                //System.out.print(" * ");
+                break;
+            }
+            System.out.print(i+" ");
+        }
+        for ( int i = 50; i <= 60; i++ ){
+            if(i==56){
+                //System.out.print(" * ");
+                break;
+            }
+            System.out.print(i+" ");
+        }
+        for( int i = 7; i<=10 ; i++){
+            System.out.print(i+" ");
+        }
+        //System.out.print(" * ");
+    }
+ }
 
 */
+
 // 9.13 Continue statement : to skip an iteration
 
 // Program 9.13.1 : Print 1 to 5 numbers such that 3 value should be skippped
@@ -212,12 +241,13 @@ public class JLoops{
 
 */
 
-//  9.14 Question - continue keyword
+// 9.14 Question - continue keyword
 
 // Program 9.14 : Display all numbers entered by user except multiple of 10
 // Note : Here the program is in infinite loop because 1. while loop  never get false and
-                                                    // 2. we used continue statement which tend to skip a particular value based on the condition applied on it but it won't stop.
-                                                    // 3. To exit from infinite loop press  ctrl + c 
+// 2. we used continue statement which tend to skip a particular value based on the condition applied on it but it won't stop.
+// 3. To exit from infinite loop press  ctrl + c 
+/* 
 import java.util.Scanner;
 public class JLoops {
 
@@ -237,6 +267,42 @@ public class JLoops {
 
      }
 }
+*/
+
+// 9.15 Check if a number is Prime or not
+/* 
+import java.util.Scanner;
+
+public class JLoops {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("enter number ");
+        int n = sc.nextInt();
+        // Handle the edge cases for n <= 1
+        if (n <= 1) {
+            System.out.println(n + " is not a Prime Number.");
+        } else {
+            boolean isPrime = true;
+             // Only check up to the square root of n
+            for (int i = 2; i <=Math.sqrt(n); i++) { //for (int i=2; i<=n-1; i++) it also works fine but it's not that optimized compared to math.sqrt(n) because here loop checks for n-2 times for any given number.
+                if (n % i == 0) { // n is a multiple of i ( i is not equal to 1 or n)
+                    isPrime = false;
+                    break;  // No need to check further, not a prime number
+                }
+            }
+            if (isPrime == true) {
+                System.out.println(n + " is a Prime Number.");
+            } else {
+                System.out.println(n + " is not a Prime Number. ");
+            }
+        }
+        sc.close(); // close the scanner to avoid resource leaks
+    }
+}
+
+*/
+
 
 
 
