@@ -216,7 +216,7 @@ public class JLoops{
 
 // Program 9.14 : Display all numbers entered by user except multiple of 10
 // Note : Here the program is in infinite loop because 1. while loop  never get false and
-                                                    // 2. we used continue statement 
+                                                    // 2. we used continue statement which tend to skip a particular value based on the condition applied on it but it won't stop.
                                                     // 3. To exit from infinite loop press  ctrl + c 
 import java.util.Scanner;
 public class JLoops {
