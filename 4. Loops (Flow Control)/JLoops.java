@@ -154,6 +154,7 @@ public class JLoops{
  
 // Program 9.12.1  : Keep entering numbers utill user enters a multiple of 10
 //LOGIC 1 :
+/* 
 import java.util.Scanner;
 public class JLoops{
     public static void main(String[] args) {
@@ -169,6 +170,7 @@ public class JLoops{
         }while(true);
     }
 }
+    */
 
 
 /* 
@@ -193,6 +195,48 @@ import java.util.Scanner;
  }
 
 */
+// 9.13 Continue statement : to skip an iteration
+
+// Program 9.13.1 : Print 1 to 5 numbers such that 3 value should be skippped
+/*  
+public class JLoops{
+    public static void main(String[] args) {
+        for(int i = 1; i<=5 ; i++){
+            if(i==3){
+                continue;
+            }
+            System.out.println(i);
+        }
+    }
+}
+
+*/
+
+//  9.14 Question - continue keyword
+
+// Program 9.14 : Display all numbers entered by user except multiple of 10
+// Note : Here the program is in infinite loop because 1. while loop  never get false and
+                                                    // 2. we used continue statement 
+                                                    // 3. To exit from infinite loop press  ctrl + c 
+import java.util.Scanner;
+public class JLoops {
+
+     public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        do{
+            System.out.print("Enter a number : ");
+            int num = sc.nextInt();
+            if(num % 10 == 0){
+                continue;
+            }
+            System.out.println(num);
+
+        }while(true);
+
+        //sc.close(); // to close the scanner to avoid resource leaks
+
+     }
+}
 
 
 
