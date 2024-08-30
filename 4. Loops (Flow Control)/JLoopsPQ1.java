@@ -1,5 +1,4 @@
 // 9.16 Loops Questions FAQ's - Practice Questions(PQ)
-/* 
 
 // Q1 : How many times 'Hello' is printed?
 
@@ -13,6 +12,5 @@ public class JLoopsPQ1 {
         }
     }
 }
-*/
 
 

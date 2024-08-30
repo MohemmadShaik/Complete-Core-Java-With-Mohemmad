@@ -462,6 +462,114 @@ public class JLoops {
 }
 
 
+// 9.16 Loops Questions FAQ's - Practice Questions(PQ)
+
+// Q1 : How many times 'Hello' is printed?
+
+public class JLoopsPQ1 {
+    public static void main(String[] args) {
+        for(int i=0; i<5; i++){
+            System.out.print(i+" Before sop ");
+            System.out.println("Hello"); //output : 2 times Hello will be printed
+            i+=2; //i = i+2; 
+            System.out.println(" After sop "+i);
+        }
+    }
+}
+
+//Q2: write a program that reads a set of integers, and then prints the sum of the even and odd integers.
+
+import java.util.Scanner;
+public class JLoopsPQ2 {
+
+     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int number;
+        int choice;
+        int evenSum=0;
+        int oddSum=0;
+        do{
+            System.out.print("Enter a number : ");
+            number = sc.nextInt();
+
+            if(number%2 == 0){
+                evenSum +=number;
+            }else{
+                oddSum +=number;
+            }
+
+            System.out.print("Do you want to continue ? Press 1 for yes or 0  for no : ");
+            choice = sc.nextInt();
+
+        }while(choice==1);
+
+        System.out.println("Sum of even numbers : "+evenSum);
+        System.out.println("Sum of odd numbers : "+oddSum);
+
+        sc.close();//close the scanner to avoid resource leaks
+     }
+}
+
+//Q3 : Print the factorial of a number given by the user.
+import java.util.Scanner;
+public class JLoopsPQ3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number : ");
+        int n = sc.nextInt();
+        int fact = 1;
+
+        for( int i=1; i<=n; i++){
+            fact = fact * i;
+        }
+        System.out.println(fact);
+        sc.close();// close the scanner to avoid resource leaks
+    }
+    
+}
+
+//Q4 : To print the multiplication table of a number given by the user.
+import java.util.Scanner;
+public class JLoopsPQ4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Multiplication table number : ");
+        int n = sc.nextInt();
+
+        for(int i=1; i<=10; i++){
+            int prod = n * i;
+            System.out.println( n+" X "+i+" = "+prod);
+        }
+            sc.close();
+    }
+    
+}
+
+//Q5 : What is wrong in the following program?
+
+public class JLoopsPQ5 {
+    public static void main(String[] args) {
+
+        //int i;
+        // for (i=0; i<=5; i++)
+        for (int i = 0; i <= 5; i++) { 
+            System.out.println(" i =  " + i);
+        }
+        System.out.println("i after the loop = " + i); // compilation error since i is used out of the scope
+    }
+}
+
+/*
+  Scope of variable is referred to the part of the program where the variable
+  can be used.In this program variable i is declared in the for loop.
+  So scope of variablei is limited to the for loop only that is between { and } of the
+  for loop. 
+  There is a display statement after the for loop where variable i is used
+  which means i is used out of scope.This leads to compilation errors.
+  The profram given will not run and give an error instead. 
+  To correct the program ,the variable i needs to be declared outside the for loop.
+  
+ */
 
 
 
