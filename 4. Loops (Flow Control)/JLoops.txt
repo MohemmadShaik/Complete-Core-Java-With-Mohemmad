@@ -1,3 +1,23 @@
+9 Loops ( Flow Control )
+*************************
+9.1 Loops Basics
+9.2 while Loop
+9.3 Print numbers from 1 to 10
+9.4 Print numbers from 1 to n
+9.5 Sum of first N natural numbers
+9.6 for Loop
+9.7 Print Square pattern
+9.8 Print reverse of a number
+9.9 Reverse the given number
+9.10 do while Loop
+9.11 Break statement
+9.12 Question - break keyword
+9.13 Continue statement
+9.14 Question - continue keyword
+9.15 Check if a number is Prime or not
+9.16 Loops Questions FAQ's
+*====++=====++========++==========++======++======++======++====*
+
 9.Loops (Flow Controls)
 ----------------------
 - A loop in Java is a control structure that allows you to execute
@@ -140,30 +160,75 @@ import java.util.Scanner;
 syntax : 
 
    for (initialization; condition; update) {
-    // Code to be executed
-}
+    //do something
+   }
 
-Program 1 :
-==========
+//Program 1:  to print 10 times Hello World using for loop.
 
-public class Main {
+ public class JLoops{
+
     public static void main(String[] args) {
-        for (int i = 1; i <= 5; i++) {
-            System.out.println("Iteration: " + i);
+        for(int i=1; i<=10 ; i++){
+            System.out.println(i+". Hello World");
+        }
+        System.out.println("Hello World Printed 10x");
+    }
+ }
+*/
+
+
+ //9.7 Print SQUARE Pattern
+/* 
+ public class JLoops{
+    public static void main(String[] args) {
+        for(int i = 1; i <= 4 ; i++){
+            System.out.println("* * * *");
         }
     }
-}
+ }
 
-output :
-======
+ */
 
-Iteration: 1
-Iteration: 2
-Iteration: 3
-Iteration: 4
-Iteration: 5
+ // 9.8 Print Reverse of a number
+  // $$NOTE1 : To get the last digit of any number use : num%10
+  // $$NOTE2 : To remove the last digit of any number use : num/10
+  /* $$NOTE3 : Formula to store the given number in reverse order is 
+               REVERSE = ( REVERSE * 10) + LAST_DIGIT
+                where LAST_DIGIT = number%10 
+                and to update the number use number/10 */
+       let n=240189
+        reverse=0;
+        last_digit = n%10;
+        /* reverse = ( reverse * 10) + last_digit;
+        reverse = (0 * 10) + 9     ==> 0 + 9 = 9
+        reverse = (9 * 10) + 8     ==> 90 + 8 = 98
+        reverse = (98 * 10) + 1    ==> 980 + 1 = 981
+        reverse = (981 * 10) + 0   ==> 9810 + 0 = 9810
+        reverse = (9810 * 10) + 4  ==> 98100 + 8 = 98104
+        reverse = (98104 * 10) + 2 ==> 981040 + 2 = 981042 */
+        n=n/10; (Updating the n value) 
 
+//9.9 Program to print the reverse of a given number   
+ import java.util.Scanner;;
+  public class JLoops{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number a reverse : ");
+        int num=sc.nextInt();
+        int given_number = num;
+        int reverse = 0;
+        int last_digit = 0;
+        while(num>0){
+            last_digit = num%10;
+            reverse = (reverse * 10) + last_digit;
+            num = num/10;                                                                                                                                                                                                   
+        }
+        System.out.println("given Number : "+given_number+ "\n"+" Reverse Number : "+reverse);
+       sc.close();//close the scanner to avoid resource leaks
+    }
+  }
 
+//9.10
 3. do-while Loop : It is similar to the while loop, but the condition
    ============    is checked after the loop's body is executed,
                    ensuring that the loop runs at least once.
@@ -231,6 +296,42 @@ Number: 2
 Number: 3
 Number: 4
 Number: 5
+
+
+//9.11 Break Statement : To exit from loop we use break statement
+
+/* 
+// Program 9.11.1 : If i value is 3 then exit from the loop 
+public class JLoops{
+    public static void main(String[] args) {
+        for (int i = 1; i<=10 ; i++){
+            if(i==3){
+                break; // to exit from this entire for loop
+            }
+            System.out.println(i);
+        }
+        System.out.println("Am out of the loop when i value is 3 ");
+    }
+}
+
+*/
+
+//9.12 Question - break keyword
+ // Program 9.12.1 : Keep entering numbers till user enters a multiple of 10
+
+   /*  User entry         Print
+         1                  1
+         6                  6
+         5                  5
+         12                 12
+         7                   7
+         3                   3
+         20                  Exit since 20 is multiple of 10 */
+
+
+
+
+
 
 
 
