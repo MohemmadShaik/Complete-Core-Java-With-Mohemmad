@@ -61,6 +61,77 @@ Core Java Content
 8.10 Calculator
 8.11 Conditional Questions FAQ's
 
+9 Loops ( Flow Control )
+*************************
+9.1 Loops Basics
+9.2 while Loop
+9.3 Print numbers from 1 to 10
+9.4 Print numbers from 1 to n
+9.5 Sum of first N natural numbers
+9.6 for Loop
+9.7 Print Square pattern
+9.8 Print reverse of a number
+9.9 Reverse the given number
+9.10 do while Loop
+9.11 Break statement
+9.12 Question - break keyword
+9.13 Continue statement
+9.14 Question - continue keyword
+9.15 Check if a number is Prime or not
+9.16 Loops Questions FAQ's
+
+10 Patterns Part 1
+******************
+
+10.1 Intro to Nested Loops Star Pattern
+10.2 Inverted Star Pattern
+10.3 Half Pyramid Pattern
+10.4 Character Pattern
+10.5 Special Note
+10.6 Advanced Patterns pdf Notes
+
+11 Functions & Methods
+**********************
+11.1 Introduction to Functions
+11.2 Syntax - Function Code Demo
+11.3 Syntax with Parameters
+11.4 Parameters vs Arguments
+11.5 What happens in memory Call Stack
+11.6 Call by Value in Java
+11.7 Product of a b
+11.8 Find Factorial
+11.9 Find Binomial Coefficient
+11.10 Inbuilt v s User defined Methods
+11.11 Function Overloading
+11.12 Overloading using Parameters
+11.13 Overloading using Data Types
+11.14 Check if a number is Prime or not
+11.15 Check Prime Optimized
+11.16 Primes in Range
+11.17 Binary to Decimal
+11.18 Code - Binary to Decimal
+11.19 Decimal to Binary
+11.20 Code - Decimal to Binary
+11.21 Method Scope
+11.22 Block Scope
+11.23 Functions Solutions FAQ's
+
+12 Pattterns Part 2 advanced
+****************************
+
+12.1 Hollow Rectangle Pattern
+12.2 Dry Run - Hollow Rectangle Pattern
+12.3 Inverted Rotated Half Pyramid
+12.4 Inverted Half Pyramid Pattern with Numbers
+12.5 Floyd s Triangle Pattern
+12.6 0-1 Triangle Pattern
+12.7 Butterfly Pattern
+12.8 Butterfly Pattern Code explanation continued as well
+12.9 Solid Rhombus Pattern
+12.10 Hollow Rhombus Pattern
+12.11 Diamond Pattern
+12.12 Bonus LIVE Class
+
 Author : Mohemmad
 gmail : mohemmadshaik@gmail.com
 Username : MohemmadShaik
