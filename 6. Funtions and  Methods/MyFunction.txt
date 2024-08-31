@@ -1,0 +1,12 @@
+11. Function and Methods
+========================
+
+A reusable block of code/statements which is written once and can be 
+called any no.of times as per the user need without re-writing the same logic of code again and again.
+
+syntax: 
+=======
+returnType name(){
+    //body
+    return statement;
+}
