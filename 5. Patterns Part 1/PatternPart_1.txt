@@ -1,0 +1,12 @@
+10 Patterns Part 1
+==================
+
+10.1 Intro to Nested Loops Star Pattern
+--------------------------------------
+
+Program 1 : Print STAR pattern
+
+*
+**
+***
+****
