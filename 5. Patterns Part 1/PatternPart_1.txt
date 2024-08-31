@@ -103,4 +103,4 @@ public class PatternPart_1 {
     }
 }
 
-// 10.6 Advanced Patterns pdf Notes : it will be covered in Patterns Advanced Part-2
+// ***Note : 10.6 Advanced Patterns pdf Notes : it will be covered in Patterns Advanced Part-2
