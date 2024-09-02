@@ -1,3 +1,4 @@
+
 //Program 1:
 /* 
 public class MyFunction {
@@ -14,10 +15,11 @@ public class MyFunction {
 }
  */
 
- //Program 2: Addition of 2 numbers using function
+//Program 2: Addition of 2 numbers using function
 
- //Step 1 : Sum of 2 numbers without using function
-import java.util.Scanner;
+//Step 1 : Simple java program to calculate Sum of 2 numbers (i.e without using function)
+
+/*  import java.util.Scanner;
 
 public class MyFunction {
   
@@ -33,4 +35,26 @@ public class MyFunction {
         sc.close();// close the scanner to avoid resource leaks
     }
  }
+*/
 
+//PART 2 : Program to calculate Sum of 2 numbers without using any return type and without passing any arguments.
+
+import java.util.Scanner;
+
+public class MyFunction {
+
+    public static void calculateSum() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a value : ");
+        int a = sc.nextInt();
+        System.out.print("Enter b value : ");
+        int b = sc.nextInt();
+        int sum = a + b;
+        System.out.println("Sum of " + a + " and " + b + " is : " + sum);
+        sc.close();
+    }
+
+    public static void main(String[] args) {
+        calculateSum();
+    }
+}
