@@ -17,7 +17,7 @@ public class MyFunction {
 
 //Program 2: Addition of 2 numbers using function
 
-//Step 1 : Simple java program to calculate Sum of 2 numbers (i.e without using function)
+//PART 1 : Simple java program to calculate Sum of 2 numbers (i.e without using function)
 
 /*  import java.util.Scanner;
 
@@ -61,9 +61,9 @@ public class MyFunction {
 }
 */
 
-// Part 3 : Program to calculate Sum of 2 numbers by passing the arguments but with no return type
+//Part 3 : Program to calculate Sum of 2 numbers by passing the arguments but with no return type
 
-import java.util.Scanner;
+/* import java.util.Scanner;
 
 public class MyFunction {
     // Passing the arguments with no return type
@@ -85,4 +85,27 @@ public class MyFunction {
         
     }
 }
+    */
 
+//Part 4 : Program to calculate Sum of 2 numbers by passing the arguments with return type
+
+import java.util.Scanner;
+
+public class MyFunction {
+     // Passing arguments with returntype
+    public static int calculateSum(int num1, int num2){
+        int sum = num1 + num2; 
+        return sum;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a value : ");
+        int a = sc.nextInt();
+        System.out.print("Enter b value : ");
+        int b = sc.nextInt();
+        int sum = calculateSum(a,b); //Passing the arguments
+        System.out.println("Sum of " + a + " and " + b + " is : " + sum);
+        sc.close();
+    }
+}

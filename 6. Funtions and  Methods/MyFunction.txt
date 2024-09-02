@@ -109,3 +109,29 @@ public class MyFunction {
         
     }
 }
+
+// Part 4 : Program to calculate Sum of 2 numbers by passing the arguments with return type
+
+import java.util.Scanner;
+
+public class MyFunction {
+     // Passing arguments with returntype
+    public static int calculateSum(int num1, int num2){
+        int sum = num1 + num2; 
+        return sum;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a value : ");
+        int a = sc.nextInt();
+        System.out.print("Enter b value : ");
+        int b = sc.nextInt();
+        int sum = calculateSum(a,b); //Passing the arguments
+        System.out.println("Sum of " + a + " and " + b + " is : " + sum);
+        sc.close();
+    }
+}
+
+/* Note : Scope of num1 and num2 arguments are limited so we can't access them in our main() 
+          Here the int sum variable defined in user( ) and main( ) are completely different.  */
