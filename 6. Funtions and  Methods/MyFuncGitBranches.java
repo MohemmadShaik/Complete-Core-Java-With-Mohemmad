@@ -27,7 +27,7 @@ public class MyFuncGitBranches {
     public static void hello(){
         System.out.println("Hello World Am Hazarudin here exploring function/methods  concepts.....");
     }
-     //function with no arguments and no return type.
+     //function with arguments and no return type.
     public static void calculateSum(int num1, int num2){
         int sum = num1 + num2;
         System.out.println("Sum of "+num1+" and "+num2+" is : "+sum);
@@ -40,7 +40,7 @@ public class MyFuncGitBranches {
         int a = sc.nextInt();
         System.out.print("Enter b value : ");
         int b = sc.nextInt();
-        calculateSum(a,b); //function calling
+        calculateSum(a,b); //function calling with arguments
 
         sc.close();
     }
