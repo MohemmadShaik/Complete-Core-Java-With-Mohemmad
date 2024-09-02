@@ -5,6 +5,10 @@
           2. git commit -m "Part 1 : without using function (i.e Simple basic sum program )." */
 
 //Part 2 : using feature1 branch : using function but without passing any arguments and return type.
+/* Note : 1. We are in feature1 branch.
+          2. Updated the MyFuncGitBranches.txt with feature1 branch.
+          3. git commit -m "Part 2 : feature1 ==> using function without passing any arguments and return type completed successfully."
+*/
 
 import java.util.Scanner;
 
