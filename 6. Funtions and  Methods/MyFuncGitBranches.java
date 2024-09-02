@@ -34,4 +34,5 @@ public class MyFuncGitBranches {
     }
 }
 
-//Part 3 : using feature2 branch ==> using function by passing the arguments but with no return type.
+
+//Part 3 : feature2 branch ==> using function by passing the arguments but with no return type.
