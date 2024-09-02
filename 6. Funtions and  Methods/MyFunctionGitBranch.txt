@@ -9,3 +9,24 @@ feature3 ==> Part 4 : using function by passing the arguments and with return ty
 
 //part 1 : main branch 
 
+import java.util.Scanner;
+
+public class MyFuncGitBranches {
+    public static void hello(){
+        System.out.println("Hello World Am Hazarudin here exploring function/methods  concepts.....");
+    }
+    public static void main(String[] args) {
+        //hello();
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a value : ");
+        int a = sc.nextInt();
+        System.out.print("Enter b value : ");
+        int b = sc.nextInt();
+        int sum = a + b;
+        System.out.println("Sum of "+a+" and "+b+" is : "+sum);
+        sc.close();
+
+    }
+}
+
