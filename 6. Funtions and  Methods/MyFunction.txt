@@ -1,4 +1,4 @@
-11. Function and Methods
+11. Function/Methods
 ========================
 
 A reusable block of code/statements which is written once and can be 
@@ -9,4 +9,26 @@ syntax:
 returnType name(){
     //body
     return statement;
+}
+
+NOTE : If we write any function within a class then those functions are called as methods in java.
+KEY NOTE : Like other langauges (C, C++ , Python) we can write functions outside the class (which are Called as Standalone functions) 
+           but Java programmming is designed in such a way that all functions should be written within the classes only.
+
+//Program 1:
+
+public class MyFunction {
+    public static void printHelloWorld() {
+        System.out.println("Hello World");
+        System.out.println("Hello World");
+        System.out.println("Hello World");
+        return;
+    }
+
+    public static void main(String[] args) {
+
+        printHelloWorld();//function call
+
+    }
+
 }
