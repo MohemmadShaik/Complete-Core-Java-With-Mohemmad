@@ -10,6 +10,8 @@
           3. git commit -m "Part 2 : feature1 ==> using function without passing any arguments and return type completed successfully."
 */
 
+//Part 3 : feature2 branch ==> using function by passing the arguments but with no return type.
+
 import java.util.Scanner;
 
 public class MyFuncGitBranches {
@@ -18,21 +20,22 @@ public class MyFuncGitBranches {
         System.out.println("Hello World Am Hazarudin here exploring function/methods  concepts.....");
     }
      //function with no arguments and no return type.
-    public static void calculateSum(){
+    public static void calculateSum(int num1, int num2){
+        int sum = num1 + num2;
+        System.out.println("Sum of "+num1+" and "+num2+" is : "+sum);
+        
+    }
+    public static void main(String[] args) {
+        //hello();
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a value : ");
         int a = sc.nextInt();
         System.out.print("Enter b value : ");
         int b = sc.nextInt();
-        int sum = a + b;
-        System.out.println("Sum of "+a+" and "+b+" is : "+sum);
+        calculateSum(a,b); //function calling
+
         sc.close();
-    }
-    public static void main(String[] args) {
-        //hello();
-        calculateSum(); //function calling
     }
 }
 
 
-//Part 3 : feature2 branch ==> using function by passing the arguments but with no return type.
