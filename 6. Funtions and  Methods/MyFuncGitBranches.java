@@ -8,9 +8,17 @@
 /* Note : 1. We are in feature1 branch.
           2. Updated the MyFuncGitBranches.txt with feature1 branch.
           3. git commit -m "Part 2 : feature1 ==> using function without passing any arguments and return type completed successfully."
+          4. switched to main branch and then merged with the feature1 changes into the main branch.
+          5. Finally pushed the latesh main program into the Github repository.
 */
 
 //Part 3 : feature2 branch ==> using function by passing the arguments but with no return type.
+/*Note : 1. We are in feature2 branch.
+         2. Updated the MyFuncGitBranches.txt with feature2 branch.
+         3. git commit -m "Completed Part 3 : feature2 branch ==> using function by passing the arguments but with no return type."
+         4. switched to main branch and then merged with the feature2 changes into the main branch.
+         5. Finally pushed the latesh main program into the Github repository.
+ */
 
 import java.util.Scanner;
 
