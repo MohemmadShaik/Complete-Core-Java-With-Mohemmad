@@ -1,0 +1,11 @@
+Here we will rewrite all 4 parts of the Program 2 in a single java file called (MyFuncGitBranches.java) using git branches such that
+Sum of two numbers program divided into branches :
+main     ==> Part 1 : without using function (i.e Simple basic sum program ).
+feature1 ==> Part 2 : using function but without passing any arguments and return type.
+feature2 ==> Part 3 : using function by passing the arguments but with no return type.
+feature3 ==> Part 4 : using function by passing the arguments and with return type
+
+//Program 2: Addition of 2 numbers with and with out using functions
+
+//part 1 : main branch 
+

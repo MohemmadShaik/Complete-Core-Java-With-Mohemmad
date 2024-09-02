@@ -37,7 +37,7 @@ public class MyFunction {
  }
 */
 
-//PART 2 : Program to calculate Sum of 2 numbers without using any return type and without passing any arguments.
+//PART 2 : Program to calculate Sum of 2 numbers using function without any return type and without passing any arguments.
 /* 
 import java.util.Scanner;
 
