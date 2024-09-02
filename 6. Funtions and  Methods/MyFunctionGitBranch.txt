@@ -103,3 +103,6 @@ public class MyFuncGitBranches {
          4. switched to main branch and then merged with the feature2 changes into the main branch.
          5. Finally pushed the latesh main program into the Github repository.
  */
+
+ //Part 4 : feature3 branch ==> using function by passing the arguments and with return type.
+ 
