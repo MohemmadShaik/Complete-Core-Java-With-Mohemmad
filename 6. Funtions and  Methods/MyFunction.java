@@ -38,11 +38,12 @@ public class MyFunction {
 */
 
 //PART 2 : Program to calculate Sum of 2 numbers without using any return type and without passing any arguments.
-
+/* 
 import java.util.Scanner;
 
 public class MyFunction {
 
+ //method wihout any return type and witout arguments
     public static void calculateSum() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a value : ");
@@ -55,6 +56,33 @@ public class MyFunction {
     }
 
     public static void main(String[] args) {
-        calculateSum();
+        calculateSum(); // without arguments
     }
 }
+*/
+
+// Part 3 : Program to calculate Sum of 2 numbers by passing the arguments but with no return type
+
+import java.util.Scanner;
+
+public class MyFunction {
+    // Passing the arguments with no return type
+    public static void calculateSum(int num1, int num2){
+        int sum = num1 + num2;
+        System.out.println("Sum of " + num1 + " and " + num2 + " is : " + sum);
+        
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a value : ");
+        int a = sc.nextInt();
+        System.out.print("Enter b value : ");
+        int b = sc.nextInt();
+        calculateSum(a,b); //Passing the arguments 
+
+        sc.close();
+        
+    }
+}
+
