@@ -1,12 +1,21 @@
 11. Function/Methods
 ========================
 
+11.1 Introduction to functions :
+================================
 A reusable block of code/statements which is written once and can be 
 called any no.of times as per the user need without re-writing the same logic of code again and again.
 
-syntax: 
-=======
+syntax with no parameters
+=========================
 returnType name(){
+    //body
+    return statement;
+}
+
+Syntax with parameters
+======================
+returnType name(type param1, type param2){
     //body
     return statement;
 }
@@ -16,7 +25,7 @@ KEY NOTE : Like other langauges (C, C++ , Python) we can write functions outside
            but Java programmming is designed in such a way that all functions should be written within the classes only.
            We can write any no.of functions within a single class.
 
-//Program 1:
+//11.2 Program 1:
 
 public class MyFunction {
     public static void printHelloWorld() {
@@ -36,7 +45,7 @@ public class MyFunction {
 
 ======================================================================
 
-//Program 2: Addition of 2 numbers using function
+//11.3 Program 2: Addition of 2 numbers using function
 
 Note : Here we will break this program into 3 parts 
 
