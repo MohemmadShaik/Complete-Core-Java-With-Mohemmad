@@ -79,7 +79,7 @@ public class MyFuncGitBranches {
         System.out.println("Hello World Am Hazarudin here exploring function/methods  concepts.....");
     }
      //function with arguments and no return type.
-    public static void calculateSum(int num1, int num2){ //parameters or formal parameters
+    public static void calculateSum(int num1, int num2){ K  
         int sum = num1 + num2;
         System.out.println("Sum of "+num1+" and "+num2+" is : "+sum);
         

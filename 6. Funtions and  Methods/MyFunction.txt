@@ -144,3 +144,212 @@ public class MyFunction {
 
 /* Note : Scope of num1 and num2 arguments are limited so we can't access them in our main() 
           Here the int sum variable defined in user( ) and main( ) are completely different.  */
+
+//11.4 : parameters VS Arguments
+
+--> Parameters are defined in the method declaration.
+    Parameters act as placeholders that define what type of data the method can accept.
+
+--> Arguments are passed during the method call.
+    Arguments are the actual data you provide to the method.
+
+//11.5 : What happens in memory call stack
+
+Example :
+========
+   public class myAddfunc{
+   public static int add(int a, int b){  // add( ) int type
+    int add = a + b;
+    return sum;
+   }
+   public static void main(String args[]){ // main( ) string type
+    add(5,2);
+   }
+   }
+
+|                |
+|                |
+|________________|
+|                |
+|________________|
+|  sum()         |
+|     int type   |stack frame 
+|________________|
+| main()         |
+|    string type |stack frame
+|________________|
+   Call stack 
+
+
+Note : - As many no.of functions defined in the program that many no.of stack frames will be created in the call stack.
+       - Once the return statement of the function gets executed then the memory occupied in the STACK FRAME gets cleared.
+       - And similarly once the main( ) gets executed then the memory occupied in the STACK FRAME gets cleared from the CALL STACK.
+
+
+//11.6 : Call by value in java
+
+//Q1 . Difference between "Call by Value" and "Call by Reference"?
+  Sol : In Java, "call by value" means that a copy of the variable's value is passed to the method. 
+        Java does not support "call by reference" for objects or primitives; 
+        instead, it passes the reference to the object by value.
+
+Program 1 :
+========== 
+         
+          public class Example1 {
+    public static void main(String[] args) {
+        int number = 5;
+        modifyPrimitive(number); // Call by value
+        System.out.println("After modifyPrimitive: " + number); // Output: 5
+        
+        int[] numbers = {1, 2, 3};
+        modifyArray(numbers); // Passes reference by value
+        System.out.println("After modifyArray: " + numbers[0]); // Output: 10
+    }
+    
+    static void modifyPrimitive(int n) {
+        n = 10; // This change will not affect the original value
+    }
+    
+    static void modifyArray(int[] arr) {
+        arr[0] = 10; // This change will affect the original array
+    }
+}
+
+Note: The number remains 5 after calling modifyPrimitive, demonstrating "call by value". 
+       The numbers array is modified because the reference to the array is passed by value.
+
+// Q2. Is Java "Call by Value" or "Call by Reference"?
+ Sol: Java is strictly "call by value." 
+      For primitive types, the actual value is passed, 
+      and for objects, the reference (address) to the object is passed by value, 
+      not the object itself. 
+
+Program 2:
+=========
+
+public class Example2 {
+    public static void main(String[] args) {
+        String text = "Hello";
+        modifyString(text);
+        System.out.println("After modifyString: " + text); // Output: Hello
+    }
+
+    static void modifyString(String str) {
+        str = "World"; // This change does not affect the original string
+    }
+}
+
+Note : Java passes the reference to the string by value. 
+       Reassigning the string inside the method does not affect the original text.
+
+//Q3. Can you Modify an Object Passed to a Method ? or 
+      What happens if you modify an object passed to a method in Java?
+Sol : If you modify an object inside a method, 
+      the changes will be reflected outside the method 
+      because the reference to the object is passed by value,
+      not the object itself.
+
+ Program 3 :
+ ===========
+public class Example3 {
+    public static void main(String[] args) {
+        Person person = new Person("John");
+        modifyPerson(person);
+        System.out.println("After modifyPerson: " + person.name); // Output: Mike
+    }
+
+    static void modifyPerson(Person p) {
+        p.name = "Mike"; // This change affects the original object
+    }
+}
+
+class Person {
+    String name;
+
+    Person(String name) {
+        this.name = name;
+    }
+}
+
+Note : The name of the Person object is changed inside the method, 
+       and the change is reflected outside the method as well.
+
+//Q4. Changing the Reference of a Variable Passed to a Method?
+Sol : No, you cannot change the original reference outside the method.
+      If you reassign the reference inside the method, 
+      it will not affect the original reference outside the method.
+
+Program 4:
+=========
+public class Example4 {
+    public static void main(String[] args) {
+        Person person = new Person("John");
+        changeReference(person);
+        System.out.println("After changeReference: " + person.name); // Output: John
+    }
+
+    static void changeReference(Person p) {
+        p = new Person("Mike"); // This does not affect the original reference
+    }
+}
+
+Note :  The person object’s reference is reassigned to a new Person object
+        inside changeReference, but this change does not affect 
+        the original person outside the method.
+
+Q5. Given the following code, what will be the output?
+
+Program 5 :
+==========
+
+public class Test {
+    public static void main(String[] args) {
+        int num = 10;
+        modify(num);
+        System.out.println(num); // What is the output? Answer : 10
+    }
+
+    static void modify(int x) {
+        x = 20;
+    }
+}
+
+Note : Output is 10, because Java passes the primitive by value.
+       Here the method modify only changes the local copy of num,
+       not the original variable.
+
+//Q6. Understanding the Output of Call by Value with Primitives
+
+Program 6 :
+==========
+
+public class Example5 {
+    public static void main(String[] args) {
+        int x = 9, y = 10;
+        int a = 2, b = 4, c = 6;
+      
+        int prod = x * y; 
+        int subt = b - a; 
+        int add = a + b + c;
+        
+        System.out.println(add); // Output: 12
+        System.out.println(subt); // Output: 2
+        System.out.println(prod); // Output: 90
+    }
+}
+
+// Q7 : How do we use "call by value with objects? give 3 examples?
+
+Example 1 :
+==========
+
+
+
+
+
+
+
+
+
+
