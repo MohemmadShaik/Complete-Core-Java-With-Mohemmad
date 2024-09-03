@@ -39,7 +39,7 @@ public class MyFuncGitBranches {
         System.out.println("Hello World Am Hazarudin here exploring function/methods  concepts.....");
     }
      //function with arguments and return type.
-    public static int calculateSum(int num1, int num2){
+    public static int calculateSum(int num1, int num2){// formal parameters
         int sum = num1 + num2;
         return sum;
     }
@@ -50,7 +50,7 @@ public class MyFuncGitBranches {
         int a = sc.nextInt();
         System.out.print("Enter b value : ");
         int b = sc.nextInt();
-        int sum = calculateSum(a,b); //function calling with arguments
+        int sum = calculateSum(a,b); //arguments or actual parameters
         System.out.println("Sum of "+a+" and "+b+" is : "+sum);
         sc.close();
     }

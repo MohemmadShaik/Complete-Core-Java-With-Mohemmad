@@ -106,3 +106,35 @@ public class MyFuncGitBranches {
 
  //Part 4 : feature3 branch ==> using function by passing the arguments and with return type.
  
+ import java.util.Scanner;
+
+public class MyFuncGitBranches {
+
+    public static void hello(){
+        System.out.println("Hello World Am Hazarudin here exploring function/methods  concepts.....");
+    }
+     //function with parameters and return type.
+    public static int calculateSum(int num1, int num2){// paramters or formal parameters
+        int sum = num1 + num2;
+        return sum;
+    }
+    public static void main(String[] args) {
+        //hello();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a value : ");
+        int a = sc.nextInt();
+        System.out.print("Enter b value : ");
+        int b = sc.nextInt();
+        int sum = calculateSum(a,b); //arguments or actual parameters
+        System.out.println("Sum of "+a+" and "+b+" is : "+sum);
+        sc.close();
+    }
+}
+
+/*Note : 1. We are in feature3 branch.
+         2. Updated the MyFuncGitBranches.txt with feature3 branch changes.
+         3. git commit -m "Completed Part 4 : feature3 branch ==> using function by passing the arguments and with return type."
+         4. switched to main branch and then merged with the feature2 changes into the main branch.
+         5. Finally pushed the latest main program into the Github repository.
+ */
+
