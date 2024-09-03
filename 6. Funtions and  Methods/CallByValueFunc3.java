@@ -11,4 +11,4 @@ public class CallByValueFunc3{
         modifyPrimitiveType(a); //Call by value
         System.out.println("After modifyPrimitiveType( ) : "+a); // output: 10
     }
-}g
+}
