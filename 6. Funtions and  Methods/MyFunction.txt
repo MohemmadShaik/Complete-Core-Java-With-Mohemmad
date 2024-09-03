@@ -3,8 +3,13 @@
 
 11.1 Introduction to functions :
 ================================
-A reusable block of code/statements which is written once and can be 
-called any no.of times as per the user need without re-writing the same logic of code again and again.
+- A reusable block of code/statements which is written once and can be 
+  called any no.of times as per the user need without re-writing the 
+                      same logic of code again and again.
+
+- Functions occupies memory in the form of call stack, where
+  the call stack contains stack frames which is discussed
+   in detail in 11.5 What happens in Memory?
 
 syntax with no parameters
 =========================
@@ -155,31 +160,74 @@ public class MyFunction {
 
 //11.5 : What happens in memory call stack
 
+- Functions occupies memory in the form of stacks which we call as a Call Stack.
+
+1. Managing Method Invocation:
+=============================
+ The call stack keeps track of all the methods that are called during the execution of a program. 
+ When a method is called, a new stack frame (a block of memory) is created and pushed onto the stack,
+ containing the method's parameters, local variables, and the address to return to once the method execution is complete.
+
+2. Handling Method Returns:
+==========================
+ Once a method finishes execution, its stack frame is popped off the stack, and control is returned 
+ to the calling method. 
+ The call stack ensures that each method returns to the correct location in the program.
+
+3. Maintaining Execution Order:
+==============================
+ The call stack operates in a Last In, First Out (LIFO) manner. 
+ The last method called is the first one to finish execution and be removed from the stack.
+ This ensures that methods are executed and returned in the correct order.
+
+4. Supporting Recursive Methods:
+===============================
+ The call stack enables recursion by allowing multiple instances of the same method to be active at different points 
+ in time. 
+ Each recursive call creates a new stack frame, allowing the method to maintain its own state independently
+ of other calls.
+
+5. Storing Local Variables and Parameters:
+=========================================
+ Each stack frame stores the method's local variables and parameters. 
+ These variables are only accessible within the context of the method
+ and are discarded when the method completes.
+
+ INSHORT :
+ =========
+ The call stack in Java is used to manage method execution order and 
+ track local variables, ensuring that each method call is executed
+ and returned correctly. 
+ 
+ It's essential for handling recursion, method invocation, and 
+ maintaining program flow, making it a key concept in understanding 
+ how Java handles method calls internally.
+
 Example :
 ========
-   public class myAddfunc{
-   public static int add(int a, int b){  // add( ) int type
-    int add = a + b;
-    return sum;
-   }
+                |                |
+                |                |
+                |________________|
+                |                |
+                |________________|
+                |  sum()         |
+                |     int type   |stack frame 
+                |________________|
+                | main()         |
+                |    string type |stack frame
+                |________________|
+                   Call stack 
+
+
+public class myAddfunc{
+      public static int add(int a, int b){  // add( ) int type
+         int add = a + b;
+         return sum;
+       }
    public static void main(String args[]){ // main( ) string type
-    add(5,2);
+         add(5,2);
+      }
    }
-   }
-
-|                |
-|                |
-|________________|
-|                |
-|________________|
-|  sum()         |
-|     int type   |stack frame 
-|________________|
-| main()         |
-|    string type |stack frame
-|________________|
-   Call stack 
-
 
 Note : - As many no.of functions defined in the program that many no.of stack frames will be created in the call stack.
        - Once the return statement of the function gets executed then the memory occupied in the STACK FRAME gets cleared.
