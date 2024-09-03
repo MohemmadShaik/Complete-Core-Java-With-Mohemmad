@@ -1,4 +1,4 @@
-//11.6 Call by Value in Java
+//11.6.2 Adding pass by reference value 
 
 public class CallByValueFunc3{
     public static void modifyPrimitiveType(int num){
