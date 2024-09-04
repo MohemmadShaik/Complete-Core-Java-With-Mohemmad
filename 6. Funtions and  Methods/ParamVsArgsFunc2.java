@@ -11,6 +11,4 @@ public class ParamVsArgsFunc2 {
       int sum =  calculateSum(a,b); // Arguments (or) Actual Parameters
       System.out.println("sum of "+a+" and "+b+" is "+sum);
     }
-
-    
 }
