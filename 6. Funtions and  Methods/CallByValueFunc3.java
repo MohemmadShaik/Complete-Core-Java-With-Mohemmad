@@ -2,7 +2,7 @@
 //11.6 Call by value in Java
 
 //Program 1 : Swaping of two numbers
-
+/* 
 public class CallByValueFunc3 {
     public static void swap(int x, int y) {
         int temp = x;
@@ -18,6 +18,10 @@ public class CallByValueFunc3 {
         System.out.println("Swaped values  a: " + a + " b: " + b); // a = 10, b = 30
     }
 }
+ */
+
+
+
 
 // 11.6.1 PART 1 : Call by Value Using a method without a return type.
 /* - Using primitive type (here int is a primitive data type) */
@@ -35,6 +39,9 @@ public class CallByValueFunc3 {
  * 
  */
 
+
+
+
 // 11.6.1 PART 2 : Call by Value Using a method with a return type.
 /* - Using primitive type (here int is a primitive data type) */
 /*
@@ -50,6 +57,9 @@ public class CallByValueFunc3 {
  * }
  * }
  */
+
+
+
 
 // 11.6.2 PART 1 : Call by Value Using a method without a return type.
 /* - Using non-primitive type (here String is a non-primitive data type) */
@@ -69,6 +79,10 @@ public class CallByValueFunc3 {
  * }
  */
 
+
+
+
+
 // 11.6.2 PART 2 : Call by Value Using a method with return type.
 /* - Using non-primitive type (here String is a non-primitive data type) */
 /*
@@ -84,6 +98,10 @@ public class CallByValueFunc3 {
  * }
  * }
  */
+
+
+
+
 
 // 11.6.3 Example with Non-Primitive Type and a method with no return type
 /*
@@ -129,3 +147,21 @@ public class CallByValueFunc3 {
  * through the reference do affect the original object.
  * 
  */
+
+
+//11.7 Product of a b using function
+
+public class CallByValueFunc3{
+    public static int multiply(int x, int y){
+        int product = x * y;
+        return product;
+    }
+    public static void main(String[] args) {
+        int a = 3;
+        int b = 6;
+        int prod = multiply(a,b);
+        System.out.println("Prod of "+a+" X "+b+" is : "+prod);
+         prod = multiply(3,4);
+        System.out.println("Prod of "+a+" X "+b+" is : "+prod);
+    }
+}
