@@ -380,7 +380,7 @@ public class PrimeNumbers {
 //9.15.3 Print prime numbers from 2 to n lets say n = 15 then output should be :
  /* Prime numbers from 2 to 15 are :  2 , 3 , 5 , 7 , 11 , 13. */
 
- import java.util.Scanner;
+ /* import java.util.Scanner;
 
  public class JLoops {
      public static void main(String[] args) {
@@ -418,4 +418,5 @@ public class PrimeNumbers {
      }
  }
  
+ */
 
