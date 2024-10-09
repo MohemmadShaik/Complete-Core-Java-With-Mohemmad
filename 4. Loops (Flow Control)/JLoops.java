@@ -304,5 +304,118 @@ public class JLoops {
 */
 
 
+// 9.15.1 To print prime numbers from 2 to n without using function , where n is the number given by the user. Let's say n = 15 then output : 2 3 5 7 11 13
 
+/* import java.util.Scanner;
+
+public class PrimeNumbersWithoutFunction {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input the value of n
+        System.out.print("Enter the value of n: ");
+        int n = scanner.nextInt();
+
+        System.out.println("Prime numbers from 2 to " + n + " are:");
+
+        // Loop through each number from 2 to n
+        for (int i = 2; i <= n; i++) {
+            boolean isPrime = true;
+
+            // Check if the number i is prime
+            for (int j = 2; j <= Math.sqrt(i); j++) {
+                if (i % j == 0) {
+                    isPrime = false;
+                    break; // No need to check further if it's divisible
+                }
+            }
+
+            // If the number is prime, print it
+            if (isPrime) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+}
+*/
+
+//9.15.2 To print prime numbers from 2 to n  by using function , where n is the number given by the user. Let's say n = 15 then output : 2 3 5 7 11 13
+
+/* import java.util.Scanner;
+
+public class PrimeNumbers {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input the value of n
+        System.out.print("Enter the value of n: ");
+        int n = scanner.nextInt();
+        
+        System.out.println("Prime numbers from 2 to " + n + " are:");
+
+        // Loop through each number from 2 to n
+        for (int i = 2; i <= n; i++) {
+            if (isPrime(i)) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+
+    // Method to check if a number is prime
+    public static boolean isPrime(int num) {
+        if (num <= 1) {
+            return false;
+        }
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+
+*/
+
+//9.15.3 Print prime numbers from 2 to n lets say n = 15 then output should be :
+ /* Prime numbers from 2 to 15 are :  2 , 3 , 5 , 7 , 11 , 13. */
+
+ import java.util.Scanner;
+
+ public class JLoops {
+     public static void main(String[] args) {
+         Scanner s = new Scanner(System.in);
+         System.out.print("Enter the n value : ");
+         int num = s.nextInt();
+         int given_num = num;
+         System.out.print("Prime numbers from 2 to "+given_num+" are : \n");
+         boolean first = true; // To control comma placement
+         //int primeCount = 0; // To count the number of primes found
+         for(int i = 2; i <= num ; i++){
+             boolean isPrime = true;
+             for (int j = 2; j <= Math.sqrt(i) ; j++){
+                 if(i%j == 0){
+                     isPrime = false;
+                     break;
+                 }
+             }
+             if(isPrime == true){
+                //primeCount++;
+                 if (!first) {
+                     System.out.print(" , ");
+                 }
+                 System.out.print(i);
+                 first = false; // After the first prime is printed, set first to false
+             }
+         }
+ 
+         // // Print a period if any primes were found
+         // if (primeCount > 0) {
+         //     System.out.print("."); // Add a period after the last prime
+         // }
+         System.out.print("."); // To move to the next line after output
+         s.close(); //Close the scanner to avoid resource leaks.
+     }
+ }
+ 
 
