@@ -56,7 +56,8 @@ Note : Here we will break this program into 3 parts
 
 Part 1 : Program to calculate Sum of 2 numbers (i.e without using function)
 Part 2 : Program to calculate Sum of 2 numbers without using any return type and without passing any arguments.
-Part 3 : Program to calculate Sum of 2 numbers with return type and passing the arguments.
+Part 3 : Program to calculate Sum of 2 numbers by passing the arguments but with no return type.
+Part 4 : Program to calculate Sum of 2 numbers by passing the arguments with return type.
  
  //PART 1 : Program to calculate Sum of 2 numbers (i.e without using function)
 import java.util.Scanner;
@@ -495,13 +496,31 @@ public class Example5 {
     }
 }
 
-// Q7 : How do we use "call by value with objects? give 3 examples?
+// Q7 : How do we use call by value with objects? give 3 examples?
 
-Example 1 :
+Example 1 : Can we say the 11.6.3 program as an example of call by value with objects
 ==========
 
+//11.6.3 Example with Non-Primitive Type and a method with no return type 
 
+class Box {
+    int value;
+}
 
+public class CallByValueFunc3 {
+    public static void modifyObject(Box box) {
+        box.value = 30; // This change will affect the original object
+    }
+
+    public static void main(String[] args) {
+        Box b = new Box();
+        b.value = 10;
+        modifyObject(b); // Call by value (copy of reference)
+        System.out.println("After modifyObject( ) : " + b.value); // output: 30
+    }
+}
+
+/* 
 
 
 
