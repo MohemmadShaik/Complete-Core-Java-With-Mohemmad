@@ -1,8 +1,8 @@
-//Hollow Rectangle Pattern with user input rows and columns without method.
+//Hollow Rectangle Pattern with user input rows and columns WithOut using the method.
 
 import java.util.Scanner;
 
-class Patterns_Part2_Adv{
+class HollowRectanglePattern1_WO_Method{
 	public static void main(String[] args){
 		Scanner s = new Scanner(System.in);
 		System.out.print("Enter tot rows : ");
@@ -22,6 +22,6 @@ class Patterns_Part2_Adv{
 			}
 			 System.out.print("\n");
 		}
-
+        s.close(); // close the scanner
 	}
 }
