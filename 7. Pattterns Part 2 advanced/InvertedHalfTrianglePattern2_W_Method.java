@@ -1,4 +1,4 @@
-//Pattern1 : InvertedHalfTriangle pattern using method
+//Pattern2 : InvertedHalfTriangle pattern Upwards using method
 /* InvertedHalfTriangle pattern :
 
 					*

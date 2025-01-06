@@ -1,4 +1,13 @@
+//Pattern1: Hollow Rectangle Pattern WithOut Method
 //Hollow Rectangle Pattern with user input rows and columns WithOut using the method.
+
+/*
+           * * * * * * 
+           *         *
+           *         *
+           * * * * * *
+  
+ */
 
 import java.util.Scanner;
 

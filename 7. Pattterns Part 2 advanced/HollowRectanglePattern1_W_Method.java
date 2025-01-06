@@ -1,3 +1,12 @@
+//Pattern1: Hollow Rectangle Pattern With Method
+/*
+           * * * * * * 
+           *         *
+           *         *
+           * * * * * *
+  
+ */
+
 //Hollow Rectangle Pattern passing rows and columns as arguments With using the method. 
 public class HollowRectanglePattern1_W_Method {
     public static void hallowRectPattern(int totrows, int totcols){
