@@ -183,8 +183,58 @@ Here we can see the index value 4 has the key value 10.
 So it will return the index value 4 as the key value 10 
 gets matched.
 
+//Practice 4.1 : Linear Search for given array of numbers.
+//LinearSearch : Finding the index value of an array which contains numbers.
+public class Practice8_4_1_Arrays_LinearSearch {
+    public static int linearSearch(int number[], int key){
+        for(int i=0; i<number.length;i++){
+            if (number[i]==key){
+                return i;
+            }   
+        }
+        return -1;
+        
+    }
+    public static void main(String[] args) {
+        int number[] = {2,6,5,15,10,3,16};
+        int key =16;
+       int index = linearSearch(number, key);
+       if(index == -1){
+        System.out.println("\nKey not found.");
+       }else{
+        System.out.println("\nKey found at index :"+index);
+       }
+       System.out.println();
+    }
+}
 
+//Practice 4.2 : Linear Search for given array of string values.
+//LinearSearch : Finding the index value of an array which contains string .
+public class Practice8_4_2_Arrays_LinearSearchString {
+    public static int linearSearchString(String items[], String key) {
+        for (int i = 0; i < items.length; i++) {
+            //if (items[i] == key) {
+            if(items[i].equals(key)){
+                return i;
+            }
+        }
+        return -1;
+    }
 
+    public static void main(String[] args) {
+        String items[] = { "Dosa", "Poori", "Vada Pav", "Idly", "Uttapam" };
+        String key = "Poori";
+
+        int index = linearSearchString(items, key);
+        if (index == -1) {
+            System.out.println("\nItem not found.");
+        } else {
+            System.out.println("\nItem found at index : " + index);
+        }
+        System.out.println("\n");
+    }
+  }
+}
 
 ---^v^-------^v^--Practice 4 END----^v^----^v^-------^v^--------
 
