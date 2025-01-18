@@ -32,7 +32,9 @@ class Practice1_Arrays_Creation {
         String fruits[] = { "Apple", "Mango", "Orange" };
         int len3 = fruits.length;
         System.out.println("String length :" + len3);
-       //Q) How to fetch the elements of fruits[] ?
+       //Q) How to fetch the elements of fruits[] using simple for loop?
+       //Q) How to fetch the elements of fruits[] using Enhanced for loop?
+       //Q) How to fetch the elements of fruits[] using Arrays.toString()?   
         }
     }
 }
@@ -157,6 +159,35 @@ public class Practice3_2_Arrays_Functions_As_Arguments {
     }
 }
 
------------------------------------------------------------------
+---^v^-------^v^--Practice 3 END----^v^----^v^-------^v^--------
 
-Practice 4 : 
+Practice 4 : Linear Search 
+find the index of element in a given array
+
+                key=10
+_____________________ 
+|2|4|6|8|10|12|14|16| 
+
+Let's say we want to find key value 10 from the list of
+elements of an array, then will check each element with it's
+index value. 
+
+As we all know the array index value starts from 0, 
+So will start checking from index 0 such that any element 
+is matching with our key value 10.
+
+If match found will return the index value where the 
+element gets matched. 
+
+Here we can see the index value 4 has the key value 10. 
+So it will return the index value 4 as the key value 10 
+gets matched.
+
+
+
+
+---^v^-------^v^--Practice 4 END----^v^----^v^-------^v^--------
+
+ 
+
+
