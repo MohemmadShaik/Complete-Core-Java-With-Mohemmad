@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Practice2_Arrays_Input_Output_Update {
+public class Practice8_2_Arrays_Input_Output_Update {
     public static void main(String[] args) {
         int marks[] = new int[100];
         Scanner sc = new Scanner(System.in);

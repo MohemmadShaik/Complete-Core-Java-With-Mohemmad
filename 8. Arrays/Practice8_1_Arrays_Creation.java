@@ -1,5 +1,5 @@
 /*Practice1 : how to declare an array of integer type, string type and fetch the elements stored inside the array. */
-class Practice1_Arrays_Creation {
+class Practice8_1_Arrays_Creation {
     public static void main(String[] args) {
         // marks[] of length 10
         int marks[] = new int[10];
