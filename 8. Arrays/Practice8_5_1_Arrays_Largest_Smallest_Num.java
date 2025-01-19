@@ -1,5 +1,5 @@
 //Practice 5 : Find the largest and smallest number in the given array {2,4,7,3,5,1}
-public class Practice8_5_Arrays_Largest_Smallest_Num {
+public class Practice8_5_1_Arrays_Largest_Smallest_Num {
 
     public static int getLargestNum(int numbers[]){
         int largest = Integer.MIN_VALUE; //-infinity
