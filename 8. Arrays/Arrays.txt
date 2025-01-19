@@ -238,6 +238,48 @@ public class Practice8_4_2_Arrays_LinearSearchString {
 
 ---^v^-------^v^--Practice 4 END----^v^----^v^-------^v^--------
 
- 
+Practice 5 : Find Largest in Array int numbers[] ={2,4,7,3,5,1}
+
+Key note :
+   -infinity : Integer.MIN_VALUE 
+   +infinity : Integer.MAX_VALUE
+
+   Step 1  : initialize a variable with Integer.MIN_VALUE
+               int Largest = Integer.MIN_VALUE; //-infinity
+    
+    Step 2 : Now compare each element of the given array with this Largest variable using for loop and if condition.
+              if(Largest<numbers[i])
+    
+    Step 3 : At first only the condition gets failed because currently Largest variable is storing -ve value in it.
+    Step 4 : Now assign the Largest variable to numbers[i]
+              Largest = number[i];
+    Step 5 : Similarly it will check all the array elements with the Largest number.
+             if Largest variable is found lesser compare to numbers[i], the Largest 
+             variable gets updated.
+//Practice 5 : Find the largest and smallest number in the given array {2,4,7,3,5,1}
+public class Practice8_5_Arrays_Largest_Smallest_Num {
+
+    public static int getLargestNum(int numbers[]){
+        int largest = Integer.MIN_VALUE; //-infinity
+        int smallest = Integer.MAX_VALUE; //+infinity
+        for(int i=0; i<numbers.length; i++){
+            if(largest<numbers[i]){
+                largest = numbers[i];
+            }
+            if(smallest>numbers[i]){
+                smallest=numbers[i];
+            }
+        }
+        System.out.println("\nSmallest number is : "+smallest+"\n");
+        return largest; 
+    }
+    public static void main(String[] args) {
+        int numbers[] = {2,4,7,3,5,1};
+       System.out.println("\nLargest number is : "+getLargestNum(numbers)+"\n");
+    }
+}
+
+
+  
 
 
