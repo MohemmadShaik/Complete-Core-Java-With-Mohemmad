@@ -239,7 +239,8 @@ public class Practice8_4_2_Arrays_LinearSearchString {
 ---^v^-------^v^--Practice 4 END----^v^----^v^-------^v^--------
 
 Practice 5 : Find Largest in Array int numbers[] ={2,4,7,3,5,1}
-
+time complexity : O(n) (We call it as Big of n) 
+because we did n elements operations which means we did operations for all the elements in the given array.
 Key note :
    -infinity : Integer.MIN_VALUE 
    +infinity : Integer.MAX_VALUE
