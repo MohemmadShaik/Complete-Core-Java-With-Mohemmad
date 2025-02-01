@@ -1,4 +1,4 @@
-//reverse the elements in an array
+//Practice 7 : Reverse the elements in an array arr[] ={20,30,49,67,78,88,90} using a function.
 public class Practice8_6_2_ReverseArray {
     public static void reverse(int arr[]) {
         int start = 0, end = arr.length - 1;

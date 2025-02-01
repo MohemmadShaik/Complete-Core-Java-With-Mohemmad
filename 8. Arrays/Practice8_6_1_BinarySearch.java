@@ -1,3 +1,4 @@
+//Practice 6 : Find the index value of the element 12 in an arr[] ={2,4,6,8,10,12,14} using binary search.
 public class Practice8_6_1_BinarySearch {
 
     public static int binarySearch(int numbers[], int key) {

@@ -317,6 +317,120 @@ public class Practice8_5_2_Arrays_Largest_Smallest_Num {
 }
 
 ---^v^-------^v^--Practice 5 END----^v^----^v^-------^v^--------
-Practice 6 : Binary Search
+Binary Search
+------------
+//Practice 6 : Find the index value of the element 12 in an arr[] ={2,4,6,8,10,12,14} using binary search.
+
+Note : If we are using binary search then we need the following:
+        1.start value --> 0 since array index starts from 0
+        2. End value --> length of an array 
+        3. while condition --> while(start<=end)
+        4. mid value --> int mid = (start+end)/2;
+        5. mid = key --> key found
+        6. mid > key --> end = mid - 1
+        7. mid < key --> start = mid + 1
+public class Practice8_6_1_BinarySearch {
+
+    public static int binarySearch(int numbers[], int key) {
+        int start = 0, end = numbers.length - 1;
+
+        while (start <= end) {
+            int mid = (start + end) / 2;
+
+            // comparisons
+            if (numbers[mid] == key) {
+                return mid;
+            }
+            if (numbers[mid] < key) { // right
+                start = mid + 1;
+            } else { // left
+                end = mid - 1;
+            }
+        }
+        return -1;
+    }
+
+    public static void main(String[] args) {
+        int numbers[] = { 2, 4, 6, 8, 10, 12, 14 };
+        int key = 18;
+
+        System.out.println("index for key is  : " + binarySearch(numbers, key));
+
+    }
+}
+---^v^-------^v^--Practice 6 END----^v^----^v^-------^v^--------
+
+//Practice 7 : Reverse the elements in an array arr[] ={20,30,49,67,78,88,90} using a function.
+Note : If the given array is in ascending order then make it descending order or vice versa.
+public class Practice8_6_2_ReverseArray {
+    public static void reverse(int arr[]) {
+        int start = 0, end = arr.length - 1;
+        while (start < end) {
+            int temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+            start++;
+            end--;
+        }
+    }
+
+    public static void main(String[] args) {
+        int arr[] = { 20, 30, 49, 67, 78, 88, 90 };
+        reverse(arr);
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
+
+---^v^-------^v^--Practice 7 END----^v^----^v^-------^v^--------
+//Practice 8 : Write a function to print all pairs of the given arr[] = {2,4,6,8,10}
+output : (2,4)(2,6)(2,8)(2,10)
+         (4,6)(4,8)(4,10)
+         (6,8)(6,10)
+         (8,10)
+Note : here we have to use the nested loop to print the pairs of an array.
+class Practice8_7_ArrayPairs{
+    public static void arrayPairs(int arr[]){
+		for(int i=0; i<arr.length; i++){
+			int current = arr[i]; //2,4,6,8,10
+            System.out.print("\n");
+			for(int j=i+1; j<arr.length; j++){
+				System.out.print("("+current+","+arr[j]+")");
+			}
+			System.out.print("\n");
+		}   
+    }
+    public static void main(String[] args) {
+        int arr[] = {2,4,6,8,10};
+        arrayPairs(arr);
+    }
+}
+
+---^v^-------^v^--Practice 8 END----^v^----^v^-------^v^--------
+
+Practice 9 : Print Subarrays
+Note : Subarrays are nothing but a continuous part of array
+eg: 
+____________
+|2|4|6|8|10|    ==> n(n+1)/2  ==> 5(5+1)/2 ==> 15
+
+(2) (2,4) (2,4,6) (2,4,6,8) (2,4,6,8,10) --> 5
+(4) (4,6) (4,6,8) (4,6,8,10)             --> 4
+(6) (6,8) (6,8,10)                       --> 3
+(8) (8,10)                               --> 2
+(10)                                     --> 1
+                                       --------------
+                                        Total: 15
+                                       --------------
+Note : To Print Subarrays we use nested loop and here
+       we will use 3 loops :
+       loop 1 : start --> for(int i=0 to n)
+       loop 2 : end --> for(int j=i+1 to n)
+       loop 3 : Subarray --> for(start to end)
+
+Eg : start = 2  --> i loop
+     end = 4,6,8,10 --> j loop
+     (2,4) (2,4,6) (2,4,6,8) (2,4,6,8,10) --> k loop
 
 
