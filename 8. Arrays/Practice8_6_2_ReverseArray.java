@@ -1,5 +1,5 @@
 //reverse the elements in an array
-public class ReverseArray {
+public class Practice8_6_2_ReverseArray {
     public static void reverse(int arr[]) {
         int start = 0, end = arr.length - 1;
         while (start < end) {

@@ -1,4 +1,4 @@
-public class Practice8_6_BinarySearch {
+public class Practice8_6_1_BinarySearch {
 
     public static int binarySearch(int numbers[], int key) {
         int start = 0, end = numbers.length - 1;
