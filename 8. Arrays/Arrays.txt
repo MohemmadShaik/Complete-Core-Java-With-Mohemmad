@@ -317,5 +317,6 @@ public class Practice8_5_2_Arrays_Largest_Smallest_Num {
 }
 
 ---^v^-------^v^--Practice 5 END----^v^----^v^-------^v^--------
+Practice 6 : Binary Search
 
 
