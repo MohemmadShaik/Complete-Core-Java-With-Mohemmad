@@ -1,6 +1,7 @@
+//Example 2 : To find the index of element 98 in an arr[] ={30,60,76,98,10,73} using linear search.
 package MyOwnProblems;
 
-class Example2{
+class Example2_ArrayIndexFind_LinearSearch{
 	public static int arrayIndex(int arr[], int key){
 		for(int i=0; i<arr.length; i++){
 			if(arr[i] == key){

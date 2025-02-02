@@ -1,6 +1,6 @@
+//Example 1 : To increment all the elements of arr[] to 10.
 package MyOwnProblems;
-
-public class Example1{
+public class Example1_ArrayIncrement{
 	public static void arrayIncrement(int arr[]){
 		for(int i=0; i<arr.length; i++){
 			arr[i] = arr[i]+10;
