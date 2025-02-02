@@ -6,8 +6,9 @@
 //Example 5 : find the avg and percentage of 3 subjects marks and the percentage decimal limit with 3.
 //Example 6 : To find the index of an element 50 in an arr[] ={10,20,30,40,50,60,70} using binary search.
 //Example 7 : Print in reverse order for the given array arr[] ={10,20,30,40,50,60,70} using binary search.
+//Example 8 : Write a function to print all pairs of the given array and also print total number of pairs of the given array.
 
-<$>-----@----<$>-----@-----<$>-----@-----<$>-----@-----<$>-----@-----<$>-----@-----<$>-----@-----<$>-----@-----<$>
+<$>-----@----<$>-----@-----<$>-----@-----<$>-----@-----<$>-----@-----<$>-----@-----<$>-----@-----<$>-----@-----<$>-----@-----<$>
 
 //Example 1 : To increment all the elements of arr[] to 10
 
@@ -29,7 +30,7 @@ public class Example1{
 	}
 }
 
-================<@> Example1 End <@>======================
+================<@> Example1 End <@>======================<@> Example1 End <@>======================
 
 //Example 2 : To find the index of element 98 in an arr[] ={30,60,76,98,10,73} using linear search.
 
@@ -55,7 +56,7 @@ class Example2{
 		}
 	}
 }
-================<@> Example2 End <@>======================
+================<@> Example2 End <@>======================<@> Example2 End <@>======================
 
 //Example 3 : To find the index of element "mango" in an arr[] ={"Apple","Litchi","Banana","Mango"} using linear search.
 package MyOwnProblems;
@@ -85,7 +86,7 @@ public class Example3_ArrayString {
             System.out.println("\n"+key + " is not exists in the arr[].\n");
         }
     }
-================<@> Example3 End <@>======================
+================<@> Example3 End <@>======================<@> Example3 End <@>======================
 
 //Example 4 : To find the sum of all the elements in the given arr[] ={10,20,30,40,50}
 package MyOwnProblems;
@@ -104,7 +105,7 @@ public class Example4_ArraySum {
 	}
 }
 
-================<@> Example4 End <@>======================
+================<@> Example4 End <@>======================<@> Example4 End <@>======================
 
 //Example 5 : find the avg and percentage of 3 subjects marks and the percentage decimal limit with 3.
 
@@ -131,7 +132,7 @@ public class Example5_AvgAndPercentSubjects {
 		marks(sub);
 	}
 }
-================<@> Example5 End <@>======================
+================<@> Example5 End <@>======================<@> Example5 End <@>======================
 
 //Example 6 : To find the index of an element 50 in an myarr[] ={10,20,30,40,50,60,70} using binary search.
 //Note: The array should be sorted in ascending order.
@@ -163,6 +164,32 @@ public class Example6_ArrayIndexFind_BinarySearch {
 		}
 	}
 }
-================<@> Example6 End <@>======================
+================<@> Example6 End <@>======================<@> Example6 End <@>======================
 
 //Example 7 : Print in reverse order for the given array arr[] ={10,20,30,40,50,60,70} using binary search.
+package MyOwnProblems;
+
+public class Example7_ReverseArray {
+    public static void revArray(int arr[]){
+	int start = 0, end = arr.length-1;
+	while(start<end){
+		int temp = arr[end];
+		arr[end] = arr[start];
+		arr[start] = temp;
+		start++;
+		end--;
+	}
+}
+	public static void main(String[] args){
+		int arr[] = {10,20,30,40,50,60,70};
+		revArray(arr);
+        System.out.println("\nReversed array : \n");
+		for(int i=0; i<arr.length; i++){
+            System.out.print(arr[i]+" ");
+		}
+        System.out.println("\n");
+	}
+}
+================<@> Example7 End <@>======================<@> Example7 End <@>======================
+
+//Example 8 : Write a function to print all pairs of the given array and also print total number of pairs of the given array.
