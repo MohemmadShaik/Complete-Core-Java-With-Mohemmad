@@ -384,12 +384,35 @@ public class Practice8_6_2_ReverseArray {
 }
 
 ---^v^-------^v^--Practice 7 END----^v^----^v^-------^v^--------
-//Practice 8 : Write a function to print all pairs of the given arr[] = {2,4,6,8,10}
+//Practice 8 : Write a function to print all pairs of the given arr[] = {2,4,6,8,10} and also print total number of pairs of the given array.
 output : (2,4)(2,6)(2,8)(2,10)
          (4,6)(4,8)(4,10)
          (6,8)(6,10)
          (8,10)
-Note : here we have to use the nested loop to print the pairs of an array.
+Note : Here we have to use the nested loop to print the pairs of an array.
+
+Total pair (tp) = n(n-1)/2  ------> (n-1) + (n-2) + (n-3) +..3 + 2 + 1 
+                  
+Total Number of Pairs Calculation
+----------------------------------
+If there are n elements, the number of pairs each element
+makes follows this pattern:
+
+-->1st element pairs with n−1 elements
+-->2nd element pairs with n−2 elements
+-->3rd element pairs with n−3 elements
+-->.....
+-->(n-1)th element pairs with 1 element
+-->nth element doesn’t pair with anyone
+
+Thus, the total number of pairs is:
+(n−1)+(n−2)+(n−3)+...+2+1
+
+This is the sum of the first (n-1) numbers, which follows
+the formula: n(n-1)/2
+
+Time complexity : o(n^2)
+
 class Practice8_7_ArrayPairs{
     public static void arrayPairs(int arr[]){
 		for(int i=0; i<arr.length; i++){
@@ -426,11 +449,38 @@ ____________
 Note : To Print Subarrays we use nested loop and here
        we will use 3 loops :
        loop 1 : start --> for(int i=0 to n)
-       loop 2 : end --> for(int j=i+1 to n)
+       loop 2 : end --> for(int j=i to n)
        loop 3 : Subarray --> for(start to end)
 
 Eg : start = 2  --> i loop
-     end = 4,6,8,10 --> j loop
-     (2,4) (2,4,6) (2,4,6,8) (2,4,6,8,10) --> k loop
+     end =2,4,6,8,10 --> j loop
+    (2) (2,4) (2,4,6) (2,4,6,8) (2,4,6,8,10) --> k loop
+
+// Program: To print all the sub arrays of an array arr[] ={2,4,6,8,10} and also print the total number of sub arrays.
+public class Practice8_8_SubArray{
+	public static void subArray(int arr[]){
+        int totalSubArrays = 0;
+		for(int i=0;i<arr.length;i++){
+			//int start= i;
+			for(int j=i; j<arr.length; j++){
+				//int end = j;
+                //for(int k=start; k<=end; k++){
+				for(int k=i; k<=j; k++){
+					System.out.print(arr[k]+" ");
+				}
+                totalSubArrays++;
+				System.out.println();
+			}
+			System.out.println();
+		}
+        System.out.println("Total number of sub arrays : "+totalSubArrays+"\n");
+	}
+	public static void main(String[] args){
+		int arr[] = {2,4,6,8,10};
+		subArray(arr);
+	}
+}
+
+---^v^-------^v^--Practice 8 END----^v^----^v^-------^v^--------
 
 
