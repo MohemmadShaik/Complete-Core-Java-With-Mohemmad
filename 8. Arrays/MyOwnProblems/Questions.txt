@@ -219,7 +219,7 @@ public class Example8_ArrayPairs {
 
 ================<@> Example8 End <@>======================<@> Example8 End <@>======================
 
-//Example 9 : To print all the sub arrays of an array arr[] ={2,4,6,8,10} and also print the total number of sub arrays and also total number of pairs.
+//Example 9 (PART-1): To print all the sub arrays of an array arr[] ={2,4,6,8,10} and also print the total number of sub arrays and also total number of pairs.
 package MyOwnProblems;
 
 public class Example9_PrintSubArrays {
@@ -251,4 +251,4 @@ public class Example9_PrintSubArrays {
 
 ================<@> Example9 Continued..9.1 <@>======================<@> Example9 Continued..9.1 <@>======================
 
-//Example9.1 : for the above Example9 program additionally add the total no.of pairs and sum of subarrays as well.
+//Example9.1 (PART-2): for the above Example9 program additionally add the total no.of pairs and sum of subarrays as well.
