@@ -1,4 +1,5 @@
 package MyOwnProblems.RevisionTest;
+
 //Example 1 : To increment all the elements of arr[] to 10.
 //Example 2 : To find the index of element 98 in an arr[] ={30,60,76,98,10,73} using linear search.
 //Example 3 : To find the index of element "mango" in an arr[] ={"Apple","Litchi","Banana","Mango"} using linear search.
@@ -11,28 +12,31 @@ package MyOwnProblems.RevisionTest;
 //Example 9 : To print all the sub arrays of an array arr[] ={2,4,6,8,10} and also print the total number of sub arrays and also total number of pairs.
 /* ======================================================================================================================================================== */
 
-//Example 2 : To find the index of element 98 in an arr[] ={30,60,76,98,10,73,65} using linear search.
+//Example 3 : To find the index of element "mango" in an arr[] ={"Apple","Litchi","Banana","Mango"} using linear search.
 
-public class Example2 {
-    public static int example2Method(int arr[], int key) {
-        for (int i = 1; i <arr.length; i++) {
-            if (arr[i] == key) {
-                return i;
-            }
-        }
-        return -1;
-    }
+public class Example3 {
+    public static int example3_Method(String arr[], String key){
+		for(int i=0; i<arr.length; i++){
+			/* if(arr[i] == key){
+				return i;
+			} */
+			if(arr[i].equalsIgnoreCase(key)){
+				return i;
+			}
+		}
+		return -1; // key not found
+	}
 
     public static void main(String[] args) {
-        int arr[] = { 30, 60, 76, 98, 10, 73, 65 };
-        int key = 98;
-        int index = example2Method(arr, key);
+        String arr[] = { "Apple", "Litchi", "Banana", "Mango" };
+        String key = "litchi";
+        int index = example3_Method(arr, key);
         System.out.println();
-        if (index == -1) {
-            System.out.print(key + " is not found in arr[].\n");
+        if (index != -1) {
+            System.out.print(key + " found at index : " + index + "\n");
         } else {
-            System.out.print(key + " index found at : " + index + "\n");
-            System.out.println();
+            System.out.print(key + " not found in the given arr[]. \n");
         }
+        System.out.println();
     }
 }
