@@ -33,9 +33,7 @@ public class Example5 {
 	public static double percentage_method(int sub_mrks[]){
 		int total_marks = tot_method(sub_mrks);
         double percentage = 0;
-		for(int i =0; i<sub_mrks.length; i++){
-			 percentage = ((double)total_marks/300)*100;
-		}
+	    percentage = ((double)total_marks/300)*100;
 		return percentage;
 	}
     public static void main(String[] args) {
