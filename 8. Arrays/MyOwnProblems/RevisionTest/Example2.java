@@ -11,7 +11,7 @@ package MyOwnProblems.RevisionTest;
 //Example 9 : To print all the sub arrays of an array arr[] ={2,4,6,8,10} and also print the total number of sub arrays and also total number of pairs.
 /* ======================================================================================================================================================== */
 
-//Example 2 : To find the index of element 98 in an arr[] ={30,60,76,98,10,73,65} using linear search.
+//Example 2 : To find the index of element 10 in an arr[] ={30,60,76,98,10,73,65} using linear search.
 
 public class Example2 {
     public static int example2Method(int arr[], int key) {
@@ -25,7 +25,7 @@ public class Example2 {
 
     public static void main(String[] args) {
         int arr[] = { 30, 60, 76, 98, 10, 73, 65 };
-        int key = 98;
+        int key = 10;
         int index = example2Method(arr, key);
         System.out.println();
         if (index == -1) {
