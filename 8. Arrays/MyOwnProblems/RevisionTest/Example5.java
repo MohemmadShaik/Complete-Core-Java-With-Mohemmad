@@ -32,8 +32,7 @@ public class Example5 {
 	//percentage of 3 subjects
 	public static double percentage_method(int sub_mrks[]){
 		int total_marks = tot_method(sub_mrks);
-        double percentage = 0;
-	    percentage = ((double)total_marks/300)*100;
+	    double percentage = ((double)total_marks/300)*100;
 		return percentage;
 	}
     public static void main(String[] args) {
@@ -47,8 +46,7 @@ public class Example5 {
 		System.out.println("==========================================\n");
 		double percentage = percentage_method(sub_mrks);
 		System.out.printf("Percentage of 3 subjects :%.2f%%",percentage);
-		System.out.println("\n==========================================\n");
-        
+		System.out.println("\n==========================================\n");  
     }
     
 }
