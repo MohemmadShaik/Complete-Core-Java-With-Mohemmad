@@ -29,7 +29,7 @@ public class Example3 {
 
     public static void main(String[] args) {
         String arr[] = { "Apple", "Litchi", "Banana", "Mango" };
-        String key = "litchi";
+        String key = "banana";
         int index = example3_Method(arr, key);
         System.out.println();
         if (index != -1) {
