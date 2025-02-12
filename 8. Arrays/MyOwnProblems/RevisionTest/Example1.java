@@ -20,6 +20,8 @@ package MyOwnProblems.RevisionTest;
 		}
         public static void main(String[] args){
             int mt[] = {2,4,6,8,10};
+            int len = mt.length;
+            System.out.println("\nLength of mt[] : "+len);
             System.out.println();
             System.out.print("Before increment 10 to each element in mt[] : ");
             for(int i=0; i<mt.length; i++){
