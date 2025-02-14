@@ -9,9 +9,9 @@
 //Example 9 : Write a function to print all pairs of the given array and also print total number of pairs of the given array.
 //Example 10 : To print all the sub arrays of an array arr[] ={2,4,6,8,10} and also print the total number of sub arrays and also total number of pairs.
 /* ======================================================================================================================================================== */
-//Example 6 : To find the largest and smallest number in the given arr[] ={20,65,90,99,32,43,2,1,0}
+
 package MyOwnProblems.RevisionTest;
-//Example 6 : To find the largest and smallest number in the given arr[] ={20,65,90,99,32,43,2,1,0}
+
 
 //Example 6 : To find the largest and smallest number in the given arr[] ={20,65,90,99,32,43,2,1,0}
 
@@ -35,7 +35,6 @@ public class Example6 {
 				if(small_num>arr[i]){
 					small_num = arr[i];
 				}
-			
 			}
 			return small_num;
 		}
