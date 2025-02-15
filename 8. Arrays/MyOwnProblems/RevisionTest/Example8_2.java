@@ -1,5 +1,4 @@
 package MyOwnProblems.RevisionTest;
-
 //Example 1 : To increment all the elements of arr[] to 10.
 //Example 2 : To find the index of element 98 in an arr[] ={30,60,76,98,10,73} using linear search.
 //Example 3 : To find the index of element "mango" in an arr[] ={"Apple","Litchi","Banana","Mango"} using linear search.
@@ -14,31 +13,23 @@ package MyOwnProblems.RevisionTest;
 //Example 10_1 : Example 10 each part separately discussed for better understanding.
 /* ===================================================================================================================================================================== */	
 
-//Example 3 : To find the index of element "mango" in an arr[] ={"Apple","Litchi","Banana","Mango"} using linear search.
-
-public class Example3 {
-    public static int example3_Method(String arr[], String key){
-		for(int i=0; i<arr.length; i++){
-			/* if(arr[i] == key){
-				return i;
-			} */
-			if(arr[i].equalsIgnoreCase(key)){
-				return i;
-			}
+//Example 8_2 : Print in reverse order for the un-sorted array arr[] ={2,4,3,1,0,6,5} using linear search.
+public class Example8_2{
+	public static void arrayRev(int g_arr[]){
+		int start = 0 , end = g_arr.length-1;
+		while(start<end){
+			int temp = g_arr[start];
+			g_arr[start] = g_arr[end];
+			g_arr[end] = temp;
+            start++;
+            end--;
 		}
-		return -1; // key not found
 	}
-
-    public static void main(String[] args) {
-        String arr[] = { "Apple", "Litchi", "Banana", "Mango" };
-        String key = "banana";
-        int index = example3_Method(arr, key);
-        System.out.println();
-        if (index != -1) {
-            System.out.print(key + " found at index : " + index + "\n");
-        } else {
-            System.out.print(key + " not found in the given arr[]. \n");
-        }
-        System.out.println();
-    }
+	public static void main(String[] args){
+		int g_arr[] = {2,4,3,1,0,6,5};
+		arrayRev(g_arr);
+		for(int i=0; i<g_arr.length; i++){
+			System.out.print(g_arr[i]+" ");
+		}
+	}
 }
