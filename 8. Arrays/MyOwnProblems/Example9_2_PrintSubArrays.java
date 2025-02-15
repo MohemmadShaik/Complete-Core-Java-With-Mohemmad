@@ -1,14 +1,15 @@
-/* Practice 9:  (PART-A) To print all the sub arrays of an arr[] ={10,20,30,40,50}. 
-                 (PART-B) Now print the no.of sub arrays count of an arr[] ={10,20,30,40,50}.
-                 (PART-C) To print the sum of all the sub arrays in an arr[] ={10,20,30,40,50}.
-                 (PART-D) also print the total sum of all sub arrays.
+package MyOwnProblems;
 
+
+/* Example9_2_PrintSubArrays : (PART-A) To print all the sub arrays of an arr[] ={10,20,30,40,50}. 
+                               (PART-B) Now print the no.of sub arrays count of an arr[] ={10,20,30,40,50}.
+                               (PART-C) To print the sum of all the sub arrays in an arr[] ={10,20,30,40,50}.
+                               (PART-D) also print the total sum of all sub arrays.
    
-// KEY NOTE : In Example10_1 we have discussed each part of the problem statement separately for better understanding.
-              available in MyOwnProblems/RevisionTest/Example10.java, MyOwnProblems/RevisionTest/Example10_1.java
-                and MyOwnProblems/Example9_2_PrintSubArrays.java
+   Best Example for sub arrays and best practice for sub arrays without using helper method.
 
-// Best Example for sub arrays and best practice for sub arrays without using helper method.
+// KEY NOTE : In Example10_1 we have discussed each part of the problem statement separately for better understanding.
+
                  
                  (PART-A) output : 
                  ----------------< PART-A START >--------------------
@@ -97,7 +98,7 @@
                         
 */
 
-public class Practice8_8_SubArray {
+public class Example9_2_PrintSubArrays {
     public static void arymethod(int ary[]) {
         int tot_Sum_All_SubArr = 0; // Total sum of all sub arrays -- PART-D
         int tot_Count_SubArr = 0; // Total count of subarrays -- PART-B
