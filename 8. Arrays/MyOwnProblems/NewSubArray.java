@@ -71,7 +71,7 @@ package MyOwnProblems;
  */
 
  //Part3 : (NEED TO RECHECK AND CONFIRM THE OUTPUT) printing subarrays, total subarrays count, total sum of subarrays and corrected sum of subarrays.
- //OUTPUT IS TOTALLY LARGE NUMBERS WHICH IS A BLUDER MISTAKE  NEED TO EXAMINE WHY IT HAPPENED SO.
+ //OUTPUT IS TOTALLY LARGE NUMBERS WHICH IS A BLUNDER MISTAKE  NEED TO EXAMINE WHY IT HAPPENED SO.
 /*  public class NewSubArray {
     public static void subArrayMethod(int my_arr[]) {
         System.out.println();
