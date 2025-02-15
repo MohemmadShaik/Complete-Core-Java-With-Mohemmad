@@ -9,32 +9,31 @@
 //Example 9 : Write a function to print all pairs of the given array and also print total number of pairs of the given array.
 //Example 10 : To print all the sub arrays of an array arr[] ={2,4,6,8,10} and also print the total number of sub arrays and also total number of pairs.
 /* ======================================================================================================================================================== */
+//Example 8 : Print in reverse order for the given array arr[] ={10,20,30,40,50,60,70} using binary search.
 package MyOwnProblems.RevisionTest;
-//Example 7 : To find the index of an element 50 in an arr[] ={10,20,30,40,50,60,70} using binary search.
-public class Example7 {
-    public static int example7method(int arr[], int key) {
-        int start = 0, end = arr.length-1;
-        while (start <= end) {
-            int mid = (start + end) / 2;
-            if (arr[mid] == key) {
-                return mid;
-            } else if (arr[mid] < key) {
-                start = mid + 1;
-            } else {
-                end = mid - 1;
-            }
-        }
-        return -1;
-    }
-
-    public static void main(String[] args) {
-        int arr[] = { 10, 20, 30, 40, 50, 60, 70 };
-        int key = 20;
-        int index = example7method(arr, key);
-        if (index != -1) {
-            System.out.println("\nKey : " + key + " index found at : " + index + "\n");
-        } else {
-            System.out.println("Key : " + key + " not found.\n");
-        }
-    }
+public class Example8 {
+	public static void reverseArr(int arr[]){
+		int start = 0, end = arr.length-1;
+		while(start<end){
+			int temp = arr[start];
+			   arr[start] = arr[end];
+			   arr[end] = temp;
+			   start++;
+			   end--;
+		}
+	}
+    public static void main(String[] args){
+		int arr[] = {10,20,30,40,50,60,70};
+		System.out.print("\nGiven Array : ");
+		for(int i=0; i<arr.length; i++){
+			System.out.print(arr[i]+" ");
+		}
+        System.out.println("\n\n=====(-)============(-)==========(-)==========");
+		reverseArr(arr);
+		System.out.print("\nReversed Array : ");
+		for(int i=0; i<arr.length; i++){
+			System.out.print(arr[i]+" ");
+		}
+		System.out.println("\n");
+	}
 }
