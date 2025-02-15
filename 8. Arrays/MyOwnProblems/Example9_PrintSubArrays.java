@@ -1,4 +1,4 @@
-//Example 9 : To print all the sub arrays of an array arr[] ={2,4,6,8,10} and also print the total number of sub arrays and also total number of pairs.
+//Example 9 : To print all the sub arrays of an array arr[] ={2,4,6,8,10} and also print the count of all sub arrays.
 package MyOwnProblems;
 
 public class Example9_PrintSubArrays {

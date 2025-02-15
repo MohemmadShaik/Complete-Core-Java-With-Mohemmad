@@ -18,9 +18,10 @@ public class Example9_1_PrintSubArrays {
                 subArraySum += sumSubArray(arr, i, j); //helper method to calculate sum of subarray from index 'i' to 'j'
                 System.out.println();
             }
-            
+            System.out.print("- - - - - - - - - - - - - - - - - - ");
             System.out.println("\nTotal sum_subarray arr[" + arr[i] + "] : " + subArraySum);
         }
+        System.out.println();
     }
 
     // Helper method to calculate sum of a subarray from index 'start' to 'end'
@@ -33,7 +34,7 @@ public class Example9_1_PrintSubArrays {
     }
 
     public static void main(String[] args) {
-        int arr[] = { 10, 20, 30, 40, 50 };
+        int arr[] = { 2,4,6,8,10 };
         subArray(arr);
     }
 }
