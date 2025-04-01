@@ -1,3 +1,5 @@
+//Example 1 : To increment all the elements of arr[] to 10.
+
 package RivisionTest;
 
 public class Test1 {
