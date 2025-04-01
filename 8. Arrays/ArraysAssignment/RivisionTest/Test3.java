@@ -5,7 +5,7 @@ package RivisionTest;
 public class Test3 {
 	public static int t3method(String arr[], String target){
 		for(int i=0; i<arr.length; i++){
-			if(arr[i] == target){
+			if(arr[i].equalsIgnoreCase(target)){
 				return i;
 			}
 		}
@@ -13,7 +13,7 @@ public class Test3 {
 	}
 	public static void main(String[] args){
 		String arr[]= {"Apple","Litchi","Banana","Mango"};
-		String target = "mango";
+		String target = "Mango";
 		int result = t3method(arr,target);
 		if (result != -1) {
             System.out.println("\nTarget Value : " + target + " found at index : " + result+"\n");
